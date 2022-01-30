@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
 name: Yankang
 title: abc
+description: The pages are written by Yankang.
 permalink: /blogs/:year/:month/:day/:title
