@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
 name: Yankang
+title: abc
 permalink: /blogs/:year/:month/:day/:title
