@@ -1,4 +1,5 @@
-## Welcome to GitHub Pages
+## Welcome to Kenneth's Pages
+languages: [简体中文](https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/_config.yml) [English](https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/README.md)
 
 You can use the [editor on GitHub](https://github.com/Amazingkenneth/amazingkenneth.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
