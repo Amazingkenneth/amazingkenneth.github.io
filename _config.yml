@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
 name: Yankang
-title: abc
-description: The pages are written by Yankang.
+title: Welcome!
+description: The pages follows the MIT License.
 permalink: /blogs/:year/:month/:day/:title
