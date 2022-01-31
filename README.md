@@ -1,8 +1,8 @@
 Welcome to my online notebook!
 
 Our Purpose
-> To Accelerate the spread of knowledge. Help new people learn to develop faster.
+> To Accelerate the spread of knowledge. Help new people learn to develop.
 
-#### [Blog Link](https://amazingkenneth.github.io/blogs/index.html)
+#### [Blog Index](https://amazingkenneth.github.io/blogs/index.html)
 
 All of the blogs follow the [MIT License](https://opensource.org/licenses/MIT).
