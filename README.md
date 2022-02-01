@@ -1,7 +1,7 @@
 Welcome to my online notebook!
 
 Our Purpose
-> To Accelerate the spread of knowledge. Help new people learn to develop.
+> To Accelerate the spread of knowledge. Help new people learn developing.
 
 #### [Blog Index](https://amazingkenneth.github.io/blogs/index.html)
 
