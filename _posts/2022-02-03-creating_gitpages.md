@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "生活就像海洋"
-date: 2022-01-30
+title: "教你搭建 Gitpages 博客"
+date: 2022-02-03
 ---
 
-#### 如何搭建Gitpages博客
+#### 如何搭建 Gitpages 博客
 
 1. 按照官方教程新建一个名为`username.github.io`的仓库，在仓库 Settings 中找到 Pages 进行博客配置。
 
