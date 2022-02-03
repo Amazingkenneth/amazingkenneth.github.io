@@ -12,7 +12,7 @@ date: 2022-01-30
 
 3. 编辑 _config.xml 文件。
 > ```
-title: yourtitle
-```
+> title: yourtitle
+> ```
 
 4. 把文章放到 `_post` 文件夹中。
