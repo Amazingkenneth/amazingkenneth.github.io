@@ -8,8 +8,6 @@ date: 2022-02-03
 
 1. 按照[https://docs.github.com/cn/pages/getting-started-with-github-pages/creating-a-github-pages-site](官方教程)新建一个名为`username.github.io`的仓库，在仓库 Settings 中找到 Pages 进行博客配置。
 2. 编辑 _config.xml 文件。
-
-内容如下
 ```
 theme: 博客的主题
 title: 主标题和标题栏上显示的东西
