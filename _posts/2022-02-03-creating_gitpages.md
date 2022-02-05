@@ -6,7 +6,7 @@ date: 2022-02-03
 
 #### 如何搭建 Gitpages 博客
 
-1. 按照[官方教程](https://docs.github.com/cn/pages/getting-started-with-github-pages/creating-a-github-pages-site)新建一个名为`username.github.io`的仓库，在仓库 Settings 中找到 Pages 进行博客配置。
+1. 按照[官方教程](https://docs.github.com/cn/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)新建一个名为`username.github.io`的仓库，在仓库 Settings 中找到 Pages 进行博客配置。
 
 2. 编辑（新建） */_config.xml* 文件。
 ```
