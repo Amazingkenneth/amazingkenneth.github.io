@@ -12,7 +12,7 @@ date: 2022-02-03
 theme: 博客的主题
 title: 主标题和标题栏上显示的东西
 description: 副标题和描述
-permalink: /博客的URL地址 （就是说别人访问文章的时候访问的是 `username.github.io/permalink` ）
+permalink: /博客的URL地址 （就是说别人看文章的时候访问的是“username.github.io/permalink”）
 ```
 
 3. 由于 GitHub 用的是 Jekyll，所以不需要给每一个博客都建一个 html 文件，可以直接用 markdown 写。把 `.html` 或 `.md` 的文章放到 `_post` 文件夹中就大功告成了。
