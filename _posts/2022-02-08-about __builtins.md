@@ -33,7 +33,7 @@ int main() {
 ```
 这里没有加 `srand(time(0));` 是因为使用默认种子可以减少其随机性。
 
-测试结果如下
+#### 测试结果如下
 
 |`函数名`\时间|Test 1|Test 2|Test 3|
 |`__builtin_scanf()`|3.322|3.322|3.365|3.336333333|
@@ -41,7 +41,7 @@ int main() {
 |`__builtin_printf()`|2.789|2.779|2.798|2.788666667|
 |`printf()`|2.752|2.863|2.73|2.781666667|
 
-（可参照截屏）
+#### 记录截屏
 - https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20__builtin_printf.jpg
 - https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20printf.jpg
 - https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20__builtin_scanf.jpg
