@@ -35,14 +35,20 @@ int main() {
 
 #### 测试结果如下
 
-|`函数名`\时间|Test 1|Test 2|Test 3|
+|`Function` \ Time (s) |Test 1|Test 2|Test 3| Average Time |
+| :---: | :--- | :--- | :--- | :--- | :---: |
 |`__builtin_scanf()`|3.322|3.322|3.365|3.336333333|
 |`scanf()`|3.384|3.362|3.367|3.371|
 |`__builtin_printf()`|2.789|2.779|2.798|2.788666667|
 |`printf()`|2.752|2.863|2.73|2.781666667|
 
-#### 记录截屏
-- https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20__builtin_printf.jpg
-- https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20printf.jpg
-- https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20__builtin_scanf.jpg
-- https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20scanf.jpg
+由此可以看出，是否带 `__builtin_` 其实对运行效率的影响不大，在卡常时如果需要再加上 `#define scanf __builtin_scanf` 也没什么。
+
+#### 测试记录的截屏
+
+在 Deepin Linux 20.4 上进行测试，CPU 主频 2.51GHz。
+
+- [__builtin_printf](https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20__builtin_printf.jpg)
+- [printf](https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20printf.jpg)
+- [__builtin_scanf](https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20__builtin_scanf.jpg)
+- [scanf](https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20scanf.jpg)
