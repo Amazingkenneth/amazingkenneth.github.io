@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "带__builtin_的函数的测试"
 date: 2022-02-08
 ---
