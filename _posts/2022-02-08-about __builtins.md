@@ -1,0 +1,48 @@
+---
+layout: post
+title: "带__builtin_的函数的测试"
+date: 2022-02-08
+---
+### 关于诸如 `__builtin_scanf()` 等带 `__builtin_` 的函数运行效率与原函数的测试
+
+据说 `scanf()` 和 `printf()` 加上 `__builtin_` 后会快很多。于是，我抱着试一试的心理对 $ 3 * 10^7 $ 的数据进行了文件 I/O 测试。
+
+**read**
+```
+#include <bits/stdc++.h>
+using namespace std;
+const int Maxn = 3e7;
+int a[Maxn];
+int main() {
+  freopen("test.in", "r", stdin);
+  for (int i = 0; i < 3e7; ++i)
+    __builtin_scanf(" %d", &a[i]); // scanf(" %d", &a[i]);
+  return 0;
+}
+```
+**write**
+```
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+  freopen("test.in", "w", stdout);
+  for (int i = 0; i < 3e7; ++i)
+    __builtin_printf("%d ", rand()); // printf("%d ", rand());
+  return 0;
+}
+```
+这里没有加 `srand(time(0));` 是因为使用默认种子可以减少其随机性。
+
+测试结果如下
+
+|`函数名`\时间|Test 1|Test 2|Test 3|
+|`__builtin_scanf()`|3.322|3.322|3.365|3.336333333|
+|`scanf()`|3.384|3.362|3.367|3.371|
+|`__builtin_printf()`|2.789|2.779|2.798|2.788666667|
+|`printf()`|2.752|2.863|2.73|2.781666667|
+
+（可参照截屏）
+- https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20__builtin_printf.jpg
+- https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20printf.jpg
+- https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20__builtin_scanf.jpg
+- https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20scanf.jpg
