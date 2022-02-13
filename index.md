@@ -1,6 +1,6 @@
 Welcome to visit my online notebook!
 
-**English** [简体中文](https://amazingkenneth.github.io/index/zh-cn)
+**English** [简体中文](https://amazingkenneth.github.io/translations/zh-cn)
 
 Our Purpose
 > To Accelerate the spread of knowledge. Help new people learn developing.
