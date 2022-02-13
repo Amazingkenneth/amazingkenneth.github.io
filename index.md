@@ -1,6 +1,3 @@
----
-permalink: /index/en-us
----
 Welcome to visit my online notebook!
 
 **English** [简体中文](https://amazingkenneth.github.io/index/zh-cn)
