@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "带__builtin_的函数的测试"
+title: "关于带__builtin_的函数的测试"
 date: 2022-02-08
 ---
 ### 关于诸如 `__builtin_scanf()` 等带 `__builtin_` 的函数运行效率与原函数的测试
