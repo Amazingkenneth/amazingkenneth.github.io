@@ -38,8 +38,8 @@ date: 2022-02-19
 ## 对于 OIer……
 ![DevC++Version](https://amazingkenneth.github.io/images/DevC++_GCC_Version.jpg)
 
-可以发现，多数省份目前的 Windows 竞赛环境下使用的 Dev-C++ 的版本尚停留在于 2014 年 10 月发布的 GCC [4.9.2](https://gcc.gnu.org/gcc-4.9/) 版本，而如今的 NOI Linux 2.0（正式编译环境）已经用上了 GCC 9.3.0。
-相较于 Dev-C++ 的 GCC 版本，NOI Linux 2.0（GCC 9.3）对`fsanitize=address,undefined`、多数 C++20 功能提供了支持，所以 Update 一下还是很有必要的。
+可以发现，多数省份目前的 Windows 竞赛环境下使用的 Dev-C++ 的版本尚停留在于 2014 年 10 月发布的 GCC [4.9.2](https://gcc.gnu.org/gcc-4.9/) 版本，而如今的 [NOI Linux 2.0](https://www.noi.cn/gynoi/jsgz/2021-07-16/732450.shtml)（正式编译环境）已经用上了 GCC 9.3.0。
+相较于 Dev-C++ 的 GCC 版本，NOI Linux 2.0（GCC 9.3）对`-fsanitize=address,undefined`、多数 C++20 功能提供了支持，所以 Update 一下还是很有必要的。
 
 ### But how?
 其实，只要按照前文所说进行安装，并将新安装的目录覆盖掉原来的 [环境变量](https://baike.baidu.com/item/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F) 就可以了。
