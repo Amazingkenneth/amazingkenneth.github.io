@@ -17,7 +17,7 @@ date: 2022-02-19
 建议安装 Community 版本，因为其他版本仅供免费试用。
 
 ## 3. GCC
-GCC(G++) 是遵循 GPL 协议的开源编译器，对新标准的支持最多，也是一般竞赛的默认编译环境。由于其编译工具是基于 Linux 的，为了在 Windows 上也能使用 GCC(G++) 编译器，我们需要用到一些对针对平台的 environment，例如 MinGW-w64 和 Cygwin。
+GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最多，也是一般竞赛的默认编译环境。由于其编译工具是基于 Linux 的，为了在 Windows 上也能使用 GCC(G++) 编译器，我们需要用到一些对针对平台的 environment，例如 MinGW-w64 和 Cygwin。
 
 ### MinGW-w64
 
