@@ -3,7 +3,7 @@ layout: default
 title: "关于带__builtin_的函数的测试"
 date: 2022-02-08
 ---
-### 关于诸如 `__builtin_scanf()` 等带 `__builtin_` 的函数运行效率与原函数的测试
+# 关于诸如 `__builtin_scanf()` 等带 `__builtin_` 的函数运行效率与原函数的测试
 
 据说 `scanf()` 和 `printf()` 加上 `__builtin_` 后会快很多。于是，我抱着试一试的心理对 ![3 * 10^7](https://render.githubusercontent.com/render/math?math=3\times10^7) 的数据进行了文件 I/O 测试。
 
@@ -33,7 +33,7 @@ int main() {
 ```
 这里没有加 `srand(time(0));` 是因为使用默认种子可以减少其随机性。
 
-#### 测试结果如下
+## 测试结果
 
 |`Function` \ Time (s) |Test 1|Test 2|Test 3| Average Time |
 | :---: | :--- | :--- | :--- | :--- | :---: |
@@ -44,7 +44,7 @@ int main() {
 
 由此可以看出，是否带 `__builtin_` 其实对运行效率的影响不大，在卡常时如果需要再加上 `#define scanf __builtin_scanf` 也没什么。
 
-#### 测试记录的截屏
+### 测试记录截屏
 
 在 Deepin Linux 20.4 上进行测试，CPU 主频 2.51GHz。
 
