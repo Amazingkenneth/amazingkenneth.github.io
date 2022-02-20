@@ -64,4 +64,4 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 
 ![PathC](https://amazingkenneth.github.io/images/PathC.png)
 
-在文本框内输入你安装的路径中的`bin`文件夹的位置（形如“C:\...\...\mingw810_64\bin”），并把原来 `Dev-C++` 的路径删除，保存后就可以了。
+在文本框内输入你安装的路径中的`bin`文件夹的位置（形如“C:\\...\\...\mingw810_64\bin”），并把原来 `Dev-C++` 的路径删除，保存后就可以了。
