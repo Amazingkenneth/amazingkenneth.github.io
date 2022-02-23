@@ -8,6 +8,3 @@
 #### [博客索引](https://amazingkenneth.github.io/blogs/index.html)
 
 所有博客都遵循[MIT License](https://opensource.org/licenses/MIT)。
-
-
-您可以在 `Bing` 搜索引擎上看到最新文章。

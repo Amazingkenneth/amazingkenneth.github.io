@@ -8,6 +8,3 @@ Our Purpose
 #### [Blog Index](https://amazingkenneth.github.io/blogs/index.html)
 
 All of the blogs follow the [MIT License](https://opensource.org/licenses/MIT).
-
-
-The latest posts can be seen on the `Bing` search engine。
