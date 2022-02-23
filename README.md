@@ -3,7 +3,7 @@ This respository is for the posts of daily ideas and experimental records. Welco
 
 ## Users' Questions
 1. How can I contact the author?
-- If you have any questions about the posts, please feel free to send emails to amazingkenneth@outlook.com for your questions.
+  - If you have any questions about the posts, please feel free to send emails to amazingkenneth@outlook.com for your questions.
 
-2. Can I publish a post on this git-pages either?
-- The answer is Yes, you may make a pull request to this respository.
+2. Can I also publish a post on this git-pages?
+  - The answer is `Yes`, we welcome everyone to contribute for the posts. You may make a `pull request` to this respository.
