@@ -1,4 +1,4 @@
-theme: jekyll-theme-slate
+theme: just-the-docs
 title: Hi, there?
 description: Keep track of the good things in the daily life.
 permalink: /blogs/:year/:month/:day/:title
