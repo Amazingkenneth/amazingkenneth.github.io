@@ -5,7 +5,26 @@ date: 2022-02-12
 ---
 
 # OneDrive 使用指北
+```yaml
+# Color scheme supports "light" (default) and "dark"
+color_scheme: dark
+```
 
+<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
+
+<script>
+const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+
+jtd.addEvent(toggleDarkMode, 'click', function(){
+  if (jtd.getTheme() === 'dark') {
+    jtd.setTheme('light');
+    toggleDarkMode.textContent = 'Preview dark color scheme';
+  } else {
+    jtd.setTheme('dark');
+    toggleDarkMode.textContent = 'Return to the light side';
+  }
+});
+</script>
 Windows 10、Windows 11 中其实已经预装了 OneDrive，新用户一般会分配 5GB 的空间，OneDrive 上的文件可以在 Microsoft 的几乎所有办公应用中进行文件同步。
 
 Setup 文件在 [这里](https://go.microsoft.com/fwlink/p/?LinkID=2182910) ，下载安装即可

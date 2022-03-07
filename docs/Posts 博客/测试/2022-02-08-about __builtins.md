@@ -4,7 +4,26 @@ title: "关于带__builtin_的函数的测试"
 date: 2022-02-08
 ---
 # 关于诸如 `__builtin_scanf()` 等带 `__builtin_` 的函数运行效率与原函数的测试
+```yaml
+# Color scheme supports "light" (default) and "dark"
+color_scheme: dark
+```
 
+<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
+
+<script>
+const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+
+jtd.addEvent(toggleDarkMode, 'click', function(){
+  if (jtd.getTheme() === 'dark') {
+    jtd.setTheme('light');
+    toggleDarkMode.textContent = 'Preview dark color scheme';
+  } else {
+    jtd.setTheme('dark');
+    toggleDarkMode.textContent = 'Return to the light side';
+  }
+});
+</script>
 据说 `scanf()` 和 `printf()` 加上 `__builtin_` 后会快很多。于是，我抱着试一试的心理对 ![3 * 10^7](https://render.githubusercontent.com/render/math?math=3\times10^7) 的数据进行了文件 I/O 测试。
 
 **read**
