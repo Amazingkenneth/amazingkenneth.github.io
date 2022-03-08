@@ -2,14 +2,10 @@
 layout: default
 title: "关于带__builtin_的函数的测试"
 date: 2022-02-08
+parent: testing
 ---
 # 关于诸如 `__builtin_scanf()` 等带 `__builtin_` 的函数运行效率与原函数的测试
-```yaml
-# Color scheme supports "light" (default) and "dark"
-color_scheme: dark
-```
-
-<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
+<button class="btn js-toggle-dark-mode">Switch to Dark color scheme</button>
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
@@ -17,7 +13,7 @@ const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
     jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Preview dark color scheme';
+    toggleDarkMode.textContent = 'Switch dark color scheme';
   } else {
     jtd.setTheme('dark');
     toggleDarkMode.textContent = 'Return to the light side';

@@ -2,14 +2,10 @@
 layout: default
 title: "Windows 下 C++ 编译器的安装"
 date: 2022-02-19
+parent: tutorial
 ---
 # Windows 下 C++ 编译器的安装
-```yaml
-# Color scheme supports "light" (default) and "dark"
-color_scheme: dark
-```
-
-<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
+<button class="btn js-toggle-dark-mode">Switch to Dark color scheme</button>
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
@@ -17,7 +13,7 @@ const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
     jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Preview dark color scheme';
+    toggleDarkMode.textContent = 'Switch to dark color scheme';
   } else {
     jtd.setTheme('dark');
     toggleDarkMode.textContent = 'Return to the light side';
