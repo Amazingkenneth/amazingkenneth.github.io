@@ -6,10 +6,6 @@ parent: info
 ---
 
 # OneDrive 使用指北
-```yaml
-# Color scheme supports "light" (default) and "dark"
-color_scheme: dark
-```
 
 <button class="btn js-toggle-dark-mode">Switch to dark color scheme</button>
 

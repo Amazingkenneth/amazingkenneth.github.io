@@ -7,7 +7,9 @@ description: Keep track of the good things in the daily life.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 url: "https://amazingkenneth.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-
+permalink: pretty
+exclude: ["docs/Translations"
+]
 
 # Regression tests
 # By default, the pages in /docs/tests are excluded when the site is built.

@@ -24,6 +24,7 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 1. 按照[官方教程](https://docs.github.com/cn/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)新建一个名为`username.github.io`的仓库，在仓库 Settings 中找到 Pages 进行博客配置。
 
 2. 编辑（新建） */_config.xml* 文件。
+
 ```
 theme: 博客的主题
 title: 主标题和标题栏上显示的东西
@@ -36,6 +37,7 @@ permalink: /博客的URL地址 （就是说别人看文章的时候访问的是�
 ## 注意事项
 
 1. 建议每篇 `.md` 文章的正文前面加上这样几行
+
 ```
 ---
 layout: default
