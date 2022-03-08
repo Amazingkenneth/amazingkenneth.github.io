@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 有关测试的文章
+title: testing
 has_children: true
 ---
 # 测试 的相关文章

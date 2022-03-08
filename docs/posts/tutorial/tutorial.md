@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 一些教程
+title: tutorial
 has_children: true
 ---
 # 一些教程

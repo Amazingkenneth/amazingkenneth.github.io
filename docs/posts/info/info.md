@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 有关介绍的文章
+title: info
 has_children: true
 ---
 # 介绍 的相关文章
