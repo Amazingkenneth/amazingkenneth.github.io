@@ -24,7 +24,8 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 据说 `scanf()` 和 `printf()` 加上 `__builtin_` 后会快很多。于是，我抱着试一试的心理对 ![3 * 10^7](https://render.githubusercontent.com/render/math?math=3\times10^7) 的数据进行了文件 I/O 测试。
 
 **read**
-```
+{% capture code_fence %}
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 const int Maxn = 3e7;
@@ -36,8 +37,12 @@ int main() {
   return 0;
 }
 ```
+{% endcapture %}
+{% assign code_fence = code_fence | markdownify %}
+{% include fix_linenos.html code=code_fence %}
 **write**
-```
+{% capture code_fence %}
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
@@ -47,6 +52,10 @@ int main() {
   return 0;
 }
 ```
+{% endcapture %}
+{% assign code_fence = code_fence | markdownify %}
+{% include fix_linenos.html code=code_fence %}
+
 这里没有加 `srand(time(0));` 是因为使用默认种子可以减少其随机性。
 
 ## 测试结果
