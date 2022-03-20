@@ -42,7 +42,6 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 好处是占用磁盘空间小，能够编译出原生 Windows 的 exe 程序。
 > 注意
 > 使用 Windows API 时，有的接口还需要调用 `w32api.h`，例如在使用系统套接字（socket）时，需要加 `-lWs2_32` 的编译选项
-
 #### 缺点
 不支持 Linux 的那一套系统调用接口。
 
@@ -56,7 +55,6 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 它除了 MinGW-w64 所具有的功能外，还支持 Linux 的 API，拥有完整的 Linux 环境，理论上只要是 Linux 上的源代码迁移到 Crywin 上都可以编译。
 > 对于 Linux API 的支持，其实是通过 `cygwin1.dll`（约 2MB）对 Linux / Windows 进行转换的。并且在运行时需要把 `cygwin1.dll` 放入环境变量。
 > 因此，它的运行速度会比 MinGW-w64 慢一些。
-
 #### 缺点
 因为它拥有完整的 Linux 环境，所以其占用磁盘空间偏大，且运行速度稍慢。
 
@@ -71,6 +69,8 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 相较于 Dev-C++ 的 GCC 版本，NOI Linux 2.0（GCC 9.3）对`-fsanitize=address,undefined`、多数 C++20 功能提供了支持，所以 Update 一下还是很有必要的。
 
 ### But how?
+
+#### 命令提示符下
 其实，只要按照前文所说进行安装，并将新安装的目录覆盖掉原来的 [环境变量](https://baike.baidu.com/item/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F) 就可以了。
 
 在搜索栏中搜索 `编辑系统环境变量` 然后按下图进行操作：
@@ -80,4 +80,17 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 
 ![PathC](https://amazingkenneth.github.io/images/PathC.png)
 
-在文本框内输入你安装的路径中的 `bin` 文件夹的位置（形如 `C:\...\...\mingw810_64\bin`），并把原来 Dev-C++ 的路径删除，保存后就可以了。
+在文本框内输入你安装的路径中的 `bin` 文件夹的位置（形如 `C:\...\...\mingw810_64\bin`）这样可以把你的 binary 加入到环境变量中，也就是说可以直接在命令提示符中输入编译器名称（如 `gcc`）编译运行 C/C++ 程序。
+
+#### 修改 Dev-C++ 的编译器
+在 Dev-C++ 中随便运行一个 C++ 程序，在弹出的编译日志框中找到这样的两行：（对应的路径不一定完全一致）
+{% capture code_fence %}
+```
+处理 C++ 源文件...
+- C++编译器：C;\Program Files (x86)\Dev-Cpp\MinGW64\bin\g++.exe
+```
+{% endcapture %}
+{% assign code_fence = code_fence | markdownify %}
+{% include fix_linenos.html code=code_fence %}
+
+接着在文件资源管理器中输入对应的路径，（在这个例子中是 `C;\Program Files (x86)\Dev-Cpp\` 把下载好的文件解压后放在这个地方，如果是从 `winlibs.com` 下载解压的，记得要把 `mingw64` 的文件夹名称重命名为 `MinGW64`，然后就可以了。
