@@ -10,6 +10,6 @@ permalink: /docs/zh-cn
 
 **简体中文** [English](https://amazingkenneth.github.io)
 
-## 一些（也许）有用的链接
-1. [开放日Drama的意大利歌曲](https://amazingkenneth.github.io/works/open)
+## （也许）有用的链接
+1. [Drama 的意大利歌曲](https://amazingkenneth.github.io/works/open)
 2. [值周述职报告](https://amazingkenneth.github.io/docs/posts/report/report.html)

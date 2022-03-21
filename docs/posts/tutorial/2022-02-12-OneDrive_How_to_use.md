@@ -2,7 +2,7 @@
 layout: default
 title: "OneDrive 介绍"
 date: 2022-02-12
-parent: info
+parent: tutorial
 ---
 
 # OneDrive 使用指北
