@@ -10,8 +10,6 @@ permalink: /docs/zh-cn
 
 **简体中文** [English](https://amazingkenneth.github.io)
 
-我们的目标
-> 让每一个前来访问的童鞋们都能有所收获，有所进步。
-
-## [Markdown 的微信公众号排版](https://amazingkenneth.github.io/md)
-> 这个在线编辑器借鉴于 doocs/md 仓库。它可以帮您以 Markdown 格式对微信公众号布局进行处理。
+## 一些（也许）有用的链接
+1. [开放日Drama的意大利歌曲](https://amazingkenneth.github.io/works/open)
+2. [值周述职报告](https://amazingkenneth.github.io/docs/posts/report/report.html)
