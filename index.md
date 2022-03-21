@@ -8,7 +8,3 @@ permalink: /
 # Welcome to visit my online notebook!
 
 **English** [简体中文](https://amazingkenneth.github.io/docs/zh-cn)
-
-## Some hyperlinks to the notebook:
-1. [Open House Songs](https://amazingkenneth.github.io/works/open)
-2. [Debriefing reports](https://amazingkenneth.github.io/docs/posts/report/report.html)
