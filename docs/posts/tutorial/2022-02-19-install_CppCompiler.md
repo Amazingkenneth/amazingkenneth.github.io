@@ -18,7 +18,7 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
     toggleDarkMode.textContent = 'Switch to dark color scheme';
   } else {
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Return to the light side';
+    toggleDarkMode.textContent = 'Return to the light scheme';
   }
 });
 </script>
@@ -109,10 +109,12 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 
 接着在文件资源管理器中输入对应的路径，（在这个例子中是 `C;\Program Files (x86)\Dev-Cpp\` 把下载好的文件解压后放在这个地方，如果是从 `winlibs.com` 下载解压的，记得要把 `mingw64` 的文件夹名称重命名为 `MinGW64`，然后就可以了。
 
-### 效果演示
+### 效果演示（命令提示符下）
+
+如图所示，（随便）写一个会发生运行时错误的 C++ 程序：
+![](https://amazingkenneth.github.io/images/compile.png)
 
 ![](https://amazingkenneth.github.io/images/causeerror.png)
-![](https://amazingkenneth.github.io/images/compile.png)
 ![](https://amazingkenneth.github.io/images/gdb.png)
 ![](https://amazingkenneth.github.io/images/run.png)
 ![](https://amazingkenneth.github.io/images/typerun.png)

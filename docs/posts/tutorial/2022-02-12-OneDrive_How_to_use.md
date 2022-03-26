@@ -6,6 +6,7 @@ parent: tutorial
 ---
 
 # OneDrive 使用指北
+{: .no_toc }
 
 <button class="btn js-toggle-dark-mode">Switch to dark color scheme</button>
 
@@ -18,7 +19,7 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
     toggleDarkMode.textContent = 'Switch to dark color scheme';
   } else {
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Return to the light side';
+    toggleDarkMode.textContent = 'Return to the light scheme';
   }
 });
 </script>

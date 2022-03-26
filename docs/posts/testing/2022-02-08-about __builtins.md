@@ -5,6 +5,7 @@ date: 2022-02-08
 parent: testing
 ---
 # 关于诸如 `__builtin_scanf()` 等带 `__builtin_` 的函数运行效率与原函数的测试
+{: .no_toc }
 <button class="btn js-toggle-dark-mode">Switch to Dark color scheme</button>
 
 <script>
@@ -16,11 +17,20 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
     toggleDarkMode.textContent = 'Switch dark color scheme';
   } else {
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Return to the light side';
+    toggleDarkMode.textContent = 'Return to the light scheme';
   }
 });
 </script>
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
+---
 据说 `scanf()` 和 `printf()` 加上 `__builtin_` 后会快很多。于是，我抱着试一试的心理对 ![3 * 10^7](https://render.githubusercontent.com/render/math?math=3\times10^7) 的数据进行了文件 I/O 测试。
 
 **read**
