@@ -1,7 +1,7 @@
 ---
 layout: default
 title: tutorial
-has_children: false
+has_children: true
 ---
 # 一些教程
 
