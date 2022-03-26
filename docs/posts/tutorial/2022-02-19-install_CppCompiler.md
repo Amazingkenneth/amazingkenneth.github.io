@@ -5,6 +5,8 @@ date: 2022-02-19
 parent: tutorial
 ---
 # Windows 下 C++ 编译器的安装
+{: .no_toc }
+
 <button class="btn js-toggle-dark-mode">Switch to Dark color scheme</button>
 
 <script>
@@ -20,6 +22,17 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
   }
 });
 </script>
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+---
 当前主流的 C++ 编译器有这样几个：
 1. Clang
 2. Microsoft Visual C++
@@ -34,6 +47,18 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 
 ## 3. GCC
 GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最多，也是一般竞赛的默认编译环境。由于其编译工具是基于 Linux 的，为了在 Windows 上也能使用 GCC(G++) 编译器，我们需要用到一些对针对平台的 environment，例如 MinGW-w64 和 Cygwin。
+
+### Cygwin
+#### 优点
+它除了 MinGW-w64 所具有的功能外，还支持 Linux 的 API，拥有完整的 Linux 环境，理论上只要是 Linux 上的源代码迁移到 Crywin 上都可以编译。
+> 对于 Linux API 的支持，其实是通过 `cygwin1.dll`（约 2MB）对 Linux / Windows 进行转换的。并且在运行时需要把 `cygwin1.dll` 放入环境变量。
+> 因此，它的运行速度会比 MinGW-w64 慢一些。
+#### 缺点
+因为它拥有完整的 Linux 环境，所以其占用磁盘空间偏大，且运行速度稍慢。
+
+#### 安装
+[这里](https://www.cygwin.com/install.html) 是 Cygwin 的官网，如果嫌下载速度太慢，可以尝试下 [这些镜像](https://www.cygwin.com/mirrors.html)。
+具体安装只需运行 [setup-x86_64.exe](https://www.cygwin.com/setup-x86_64.exe)。
 
 ### MinGW-w64
 
@@ -50,17 +75,6 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 
 [在这儿](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/) 可以进行较为传统的安装，一般的安装版本会比 [GCC 官网](https://gcc.gnu.org) 发布的最新版本稍后，而且一般是第一个稳定版本。
 
-### Cygwin
-#### 优点
-它除了 MinGW-w64 所具有的功能外，还支持 Linux 的 API，拥有完整的 Linux 环境，理论上只要是 Linux 上的源代码迁移到 Crywin 上都可以编译。
-> 对于 Linux API 的支持，其实是通过 `cygwin1.dll`（约 2MB）对 Linux / Windows 进行转换的。并且在运行时需要把 `cygwin1.dll` 放入环境变量。
-> 因此，它的运行速度会比 MinGW-w64 慢一些。
-#### 缺点
-因为它拥有完整的 Linux 环境，所以其占用磁盘空间偏大，且运行速度稍慢。
-
-#### 安装
-[这里](https://www.cygwin.com/install.html) 是 Cygwin 的官网，如果嫌下载速度太慢，可以尝试下 [这些镜像](https://www.cygwin.com/mirrors.html)。
-具体安装只需运行 [setup-x86_64.exe](https://www.cygwin.com/setup-x86_64.exe)。
 
 ## 对于 OIer……
 ![DevC++Version](https://amazingkenneth.github.io/images/DevC++_GCC_Version.jpg)
@@ -94,3 +108,13 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 {% include fix_linenos.html code=code_fence %}
 
 接着在文件资源管理器中输入对应的路径，（在这个例子中是 `C;\Program Files (x86)\Dev-Cpp\` 把下载好的文件解压后放在这个地方，如果是从 `winlibs.com` 下载解压的，记得要把 `mingw64` 的文件夹名称重命名为 `MinGW64`，然后就可以了。
+
+### 效果演示
+
+![](https://amazingkenneth.github.io/images/causeerror.png)
+![](https://amazingkenneth.github.io/images/compile.png)
+![](https://amazingkenneth.github.io/images/gdb.png)
+![](https://amazingkenneth.github.io/images/run.png)
+![](https://amazingkenneth.github.io/images/typerun.png)
+![](https://amazingkenneth.github.io/images/quit.png)
+![](https://amazingkenneth.github.io/images/back.png)
