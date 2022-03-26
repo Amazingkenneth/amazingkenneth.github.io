@@ -113,10 +113,27 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 
 如图所示，（随便）写一个会发生运行时错误的 C++ 程序：
 ![](https://amazingkenneth.github.io/images/compile.png)
-
-![](https://amazingkenneth.github.io/images/causeerror.png)
+尝试运行，会发现并没有输出本应有的 `is a error!`
+![](https://amazingkenneth.github.io/images/erroccurs.png)
+如果想知道错误出在了哪里，可以这样做：
+1. 在命令提示符中输入 `gdb`，后面跟着可执行文件的名称，这一步之前要确认编译时有开 ` -g`（生成调试信息）选项。
 ![](https://amazingkenneth.github.io/images/gdb.png)
+2. 在紧接着的提示符中输入 `run`（或者直接简写为 `r`）。
 ![](https://amazingkenneth.github.io/images/run.png)
 ![](https://amazingkenneth.github.io/images/typerun.png)
+3. 运行程序后会发现没有正常终止，而是返回了 `SIGSEGV`，即段错误，内存访问越界。它也明确指出了发生错误的位置：
+
+{% capture code_fence %}
+```cpp
+main () at a.cpp:4
+4         std::cout << s.top() << "is a error!\n";
+```
+{% endcapture %}
+{% assign code_fence = code_fence | markdownify %}
+{% include fix_linenos.html code=code_fence %}
+![](https://amazingkenneth.github.io/images/causeerror.png)
+最后找到错误后关闭 gdb，不能直接用 `Ctrl + C` 结束进程，而是应该输入 `quit`（或者直接简写为 `q`）。
 ![](https://amazingkenneth.github.io/images/quit.png)
+在 gdb 的询问中回答 `Y`。
 ![](https://amazingkenneth.github.io/images/back.png)
+对于更多 `gdb` 这一强大的调试工具的使用，详见 [Documention](https://www.sourceware.org/gdb/documentation/)。
