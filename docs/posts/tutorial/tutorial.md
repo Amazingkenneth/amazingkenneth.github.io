@@ -1,5 +1,4 @@
 ---
-layout: default
 title: tutorial
 has_children: true
 ---

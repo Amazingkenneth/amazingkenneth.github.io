@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "关于带__builtin_的函数的测试"
 date: 2022-02-08
 parent: testing

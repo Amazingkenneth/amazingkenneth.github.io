@@ -1,5 +1,4 @@
 ---
-layout: default
 title: testing
 has_children: true
 ---

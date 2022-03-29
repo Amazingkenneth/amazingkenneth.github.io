@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "Windows 下 C++ 编译器的安装"
 date: 2022-02-19
 parent: tutorial
