@@ -7,3 +7,5 @@ permalink: /
 # Welcome to visit my online notebook!
 
 **English** [简体中文](https://amazingkenneth.github.io/docs/zh-cn)
+
+[View it on GitHub](https://github.com/Amazingkenneth/amazingkenneth.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }

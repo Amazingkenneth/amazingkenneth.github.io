@@ -30,7 +30,7 @@ search:
   rel_url: true
   # Enable or disable the search button that appears in the bottom right corner of every page
   # Supports true or false (default)
-  button: false
+  button: true
 
 # Enable or disable heading anchors
 heading_anchors: true
@@ -67,7 +67,7 @@ gh_edit_link_text: "Edit this page on GitHub"
 gh_edit_repository: "https://github.com/Amazingkenneth/amazingkenneth.github.io" # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
-gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into the editor immediately
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 
 
 # Google Analytics Tracking (optional)
