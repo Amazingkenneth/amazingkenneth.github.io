@@ -37,14 +37,14 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 2. Microsoft Visual C++
 3. GCC(G++)
 
-## 1. Clang
+## Clang
 它是遵循 Apache 2.0 协议的开源编译器。它在 Windows 上的安装是最简单的，直接从 [GitHub 的仓库](https://github.com/llvm/llvm-project/releases) 上的 Assets 中找到 .exe 文件下载并安装就可以了，只是文件稍大，需要时间。
 
-## 2. Microsoft Visual C++
+## Microsoft Visual C++
 [这款](https://visualstudio.microsoft.com/zh-hans/vs/features/cplusplus/)编译器同时也是代码编辑器，并且它能够提供 Windows 原生支持，一般适用于开发大工程。如果只是平时写题、开发小程序则不建议使用，因为它所占用的空间巨大，磁盘空间占用以 10GB 计。
 建议安装 Community 版本，因为其他版本仅供免费试用。
 
-## 3. GCC
+## GCC
 GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最多，也是一般竞赛的默认编译环境。由于其编译工具是基于 Linux 的，为了在 Windows 上也能使用 GCC(G++) 编译器，我们需要用到一些对针对平台的 environment，例如 MinGW-w64 和 Cygwin。
 
 ### Cygwin
