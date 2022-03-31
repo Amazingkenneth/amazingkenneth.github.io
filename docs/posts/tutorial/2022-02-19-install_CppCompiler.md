@@ -52,6 +52,7 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 它除了 MinGW-w64 所具有的功能外，还支持 Linux 的 API，拥有完整的 Linux 环境，理论上只要是 Linux 上的源代码迁移到 Crywin 上都可以编译。
 > 对于 Linux API 的支持，其实是通过 `cygwin1.dll`（约 2MB）对 Linux / Windows 进行转换的。并且在运行时需要把 `cygwin1.dll` 放入环境变量。
 > 因此，它的运行速度会比 MinGW-w64 慢一些。
+
 #### 缺点
 因为它拥有完整的 Linux 环境，所以其占用磁盘空间偏大，且运行速度稍慢。
 
@@ -66,6 +67,7 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 好处是占用磁盘空间小，能够编译出原生 Windows 的 exe 程序。
 > 注意
 > 使用 Windows API 时，有的接口还需要调用 `w32api.h`，例如在使用系统套接字（socket）时，需要加 `-lWs2_32` 的编译选项
+
 #### 缺点
 不支持 Linux 的那一套系统调用接口。
 
