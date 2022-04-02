@@ -1,9 +1,0 @@
-on:
-jobs:
-    deployment_job:
-        steps:
-            - actions/checkout@v1
-            - run: deploy # Deploy your site
-            - uses: atymic/sitemap-ping-action@master
-              with:
-                  sitemap-url: ${{ secrets.SITEMAP_URL }}
