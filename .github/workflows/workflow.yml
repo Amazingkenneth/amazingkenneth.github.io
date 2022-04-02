@@ -1,3 +1,4 @@
+on:
 jobs:
     deployment_job:
         steps:
