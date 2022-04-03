@@ -20,9 +20,6 @@ jobs:
       uses: cicirello/generate-sitemap@v1
       with:
         base-url-path: https://amazingkenneth.github.io/
-        path-to-root: docs
-        include-pdf: false
-        sitemap-format: txt
 
     - name: Output stats
       run: |
