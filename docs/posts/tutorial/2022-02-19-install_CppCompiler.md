@@ -3,6 +3,14 @@ title: "Windows 下 C++ 编译器的安装"
 date: 2022-02-19
 parent: tutorial
 ---
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "bb27tb3p62");
+</script>
+
 # Windows 下 C++ 编译器的安装
 {: .no_toc }
 

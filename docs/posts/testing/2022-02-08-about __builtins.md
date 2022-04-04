@@ -3,6 +3,14 @@ title: "关于带__builtin_的函数的测试"
 date: 2022-02-08
 parent: testing
 ---
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "bb27tb3p62");
+</script>
+
 # 关于诸如 `__builtin_scanf()` 等带 `__builtin_` 的函数运行效率与原函数的测试
 {: .no_toc }
 <button class="btn js-toggle-dark-mode">Switch to Dark color scheme</button>
