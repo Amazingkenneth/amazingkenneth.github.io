@@ -1,0 +1,158 @@
+---
+permalink: /v
+---
+<!DOCTYPE html>
+
+<head>
+    <style>
+        /* Explanation in JS tab */
+
+        /* Cool font from Google Fonts! */
+        @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+        body {
+            margin: 0px;
+        }
+
+        #container {
+            /* Center the text in the viewport. */
+            position: absolute;
+            margin: auto;
+            width: 100vw;
+            height: 80pt;
+            top: 0;
+            bottom: 0;
+
+            /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+            filter: url(#threshold) blur(0.6px);
+        }
+
+        /* Your average text styling */
+        #text1,
+        #text2 {
+            position: absolute;
+            width: 100%;
+            display: inline-block;
+
+            font-family: 'Raleway', sans-serif;
+            font-size: 80pt;
+
+            text-align: center;
+
+            user-select: none;
+        }
+    </style>
+    <script type="text/javascript">
+        /*
+        This pen cleverly utilizes SVG filters to create a "Morphing Text" effect. Essentially, it layers 2 text elements on top of each other, and blurs them depending on which text element should be more visible. Once the blurring is applied, both texts are fed through a threshold filter together, which produces the "gooey" effect. Check the CSS - Comment the #container rule's filter out to see how the blurring works!
+    */
+
+        const elts = {
+            text1: document.getElementById("text1"),
+            text2: document.getElementById("text2")
+        };
+
+        // The strings to morph between. You can change these to anything you want!
+        const texts = [
+        chief, accord, beyond, bound, affair, assist, associate, circumstance, arrange, cast, apparent, bless, agent, appoint, aid, commission, constant, cease, arise, broad, accompany, assume, appeal, absent, brief, adopt, bury, aside, accomplish, bore, astonish, bare, altogether, association, commerce, compel, affection, beast, ambition, arrangement, absence, assembly, acquaintance, constitution, attain, agency, burden, accustom, abroad, accustomed, assemble, await, cattle, breed, brow, aspect, abuse, appropriate, circular, anticipate, attribute, bend, bosom, assign, blaze, beam, afterward, breeze, captive, canoe, adapt, anchor, agony, assistant, avenue, chill, communism, clasp, appointment, bond, adequate, arouse, blast, compromise, acre, appetite, cathedral, circulate, blanket, carve, bargain, abstract, blossom, behalf, barrel, aboard, brass, boundary, artificial, Bible, accommodate, bunch, choke, bolt, bundle, ash, cannon, carpet, accumulate, cigarette, competent, canvas, bulk, bleed, bureau, beggar, brute, cargo, brook, acute, blade, banner, ceiling, brood, accuracy, architecture, brisk, circuit, carpenter, attentive, basin, chimney, bough, accordance, blend, aggressive, apparatus, breadth, assess, bruise, butcher, approximate, comprise, claw, brandy, accommodation, clay, arbitrary, bucket, biscuit, brake, advisable, bristle, ax, applicable, approximately, altitude, component, arithmetic, aeroplane, aviation, auxiliary, accessory, alloy, barber, amplify, booth, brittle, canteen, catalog, aluminium, ampere, cassette, aural, automobile, boast
+        ];
+
+        // Controls the speed of morphing.
+        const morphTime = 1;
+        const cooldownTime = 0.25;
+
+        let textIndex = texts.length - 1;
+        let time = new Date();
+        let morph = 0;
+        let cooldown = cooldownTime;
+
+        elts.text1.textContent = texts[textIndex % texts.length];
+        elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+
+        function doMorph() {
+            morph -= cooldown;
+            cooldown = 0;
+
+            let fraction = morph / morphTime;
+
+            if (fraction > 1) {
+                cooldown = cooldownTime;
+                fraction = 1;
+            }
+
+            setMorph(fraction);
+        }
+
+        // A lot of the magic happens here, this is what applies the blur filter to the text.
+        function setMorph(fraction) {
+            // fraction = Math.cos(fraction * Math.PI) / -2 + .5;
+
+            elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+            elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+            fraction = 1 - fraction;
+            elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+            elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+            elts.text1.textContent = texts[textIndex % texts.length];
+            elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+        }
+
+        function doCooldown() {
+            morph = 0;
+
+            elts.text2.style.filter = "";
+            elts.text2.style.opacity = "100%";
+
+            elts.text1.style.filter = "";
+            elts.text1.style.opacity = "0%";
+        }
+
+        // Animation loop, which is called every frame.
+        function animate() {
+            requestAnimationFrame(animate);
+
+            let newTime = new Date();
+            let shouldIncrementIndex = cooldown > 0;
+            let dt = (newTime - time) / 1000;
+            time = newTime;
+
+            cooldown -= dt;
+
+            if (cooldown <= 0) {
+                if (shouldIncrementIndex) {
+                    textIndex++;
+                }
+
+                doMorph();
+            } else {
+                doCooldown();
+            }
+        }
+
+        // Start the animation.
+        animate();
+    </script>
+</head>
+<body>
+<!-- Explanation in JS tab -->
+
+<!-- The two texts -->
+<div id="container">
+    <span id="text1"></span>
+    <span id="text2"></span>
+</div>
+
+<!-- The SVG filter used to create the merging effect -->
+<svg id="filters">
+    <defs>
+        <filter id="threshold">
+            <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+									0 1 0 0 0
+									0 0 1 0 0
+									0 0 0 255 -140" />
+        </filter>
+    </defs>
+</svg>
+</body>
