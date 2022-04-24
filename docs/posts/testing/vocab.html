@@ -3,7 +3,31 @@ permalink: /v
 ---
 <!DOCTYPE html>
 
+<body>
+    <!-- Explanation in JS tab -->
+
+    <!-- The two texts -->
+    <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+    </div>
+
+    <!-- The SVG filter used to create the merging effect -->
+    <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+									0 1 0 0 0
+									0 0 1 0 0
+									0 0 0 255 -140" />
+            </filter>
+        </defs>
+    </svg>
+</body>
 <head>
+  <title>Vocabulary Practise
+    </title>
     <style>
         /* Explanation in JS tab */
 
@@ -53,7 +77,7 @@ permalink: /v
         };
 
         // The strings to morph between. You can change these to anything you want!
-        const texts = [
+        texts = [
             "abroad", "acquire", "agency", "alongside", "architect", "budget", "behalf", "carpet", "catalogue", "chuck", "consist", "constitute", "consult", "comprise", "concept", "closet", "conviction", "cottage", "council", "cheque", "estimate"
         ];
 
@@ -151,25 +175,3 @@ permalink: /v
     </script>
 </head>
 
-<body>
-    <!-- Explanation in JS tab -->
-
-    <!-- The two texts -->
-    <div id="container">
-        <span id="text1"></span>
-        <span id="text2"></span>
-    </div>
-
-    <!-- The SVG filter used to create the merging effect -->
-    <svg id="filters">
-        <defs>
-            <filter id="threshold">
-                <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
-                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
-									0 1 0 0 0
-									0 0 1 0 0
-									0 0 0 255 -140" />
-            </filter>
-        </defs>
-    </svg>
-</body>
