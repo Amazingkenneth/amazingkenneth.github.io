@@ -15,13 +15,13 @@ permalink: /v
   <!-- The SVG filter used to create the merging effect -->
   <svg id="filters">
     <defs>
-    <filter id="threshold">
-    <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
-    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+      <filter id="threshold">
+        <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
                        0 1 0 0 0
                        0 0 1 0 0
                        0 0 0 255 -140" />
-    </filter>
+      </filter>
     </defs>
   </svg>
 </body>
@@ -30,42 +30,42 @@ permalink: /v
   <title>Vocabulary Practise
   </title>
   <style>
-/* Explanation in JS tab */
+    /* Explanation in JS tab */
 
-/* Cool font from Google Fonts! */
-@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+    /* Cool font from Google Fonts! */
+    @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
-body {
-  margin: 0px;
-}
+    body {
+      margin: 0px;
+    }
 
-        #container {
-          /* Center the text in the viewport. */
-          position: absolute;
-          margin: auto;
-          width: 100vw;
-          height: 80pt;
-          top: 0;
-          bottom: 0;
+    #container {
+      /* Center the text in the viewport. */
+      position: absolute;
+      margin: auto;
+      width: 100vw;
+      height: 80pt;
+      top: 0;
+      bottom: 0;
 
-          /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
-          filter: url(#threshold) blur(0.6px);
-        }
+      /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+      filter: url(#threshold) blur(0.6px);
+    }
 
-        /* Your average text styling */
-        #text1,
-        #text2 {
-          position: absolute;
-          width: 100%;
-          display: inline-block;
+    /* Your average text styling */
+    #text1,
+    #text2 {
+      position: absolute;
+      width: 100%;
+      display: inline-block;
 
-          font-family: "Raleway", sans-serif;
-          font-size: 80pt;
+      font-family: "Raleway", sans-serif;
+      font-size: 80pt;
 
-          text-align: center;
+      text-align: center;
 
-          user-select: none;
-        }
+      user-select: none;
+    }
   </style>
   <script type="text/javascript">
     /*
@@ -73,44 +73,53 @@ body {
          */
 
     const elts = {
-          text1: document.getElementById("text1"),
-          text2: document.getElementById("text2")
-        };
+      text1: document.getElementById("text1"),
+      text2: document.getElementById("text2")
+    };
 
     // The strings to morph between. You can change these to anything you want!
     texts = [
-          "chuck", "consist", "constitute", "consult",
-          "comprise", "concept", "conviction",
-          "cheque", "circuit", "consistent", "consumption",
-          "component", "deposit", "crew", "crisis", "dominant", "dominate",
-          "deliberately", "discount", "dump",
-          "enquiry", "facility", "expansion", "exhibition",
-          "equipment", "equivalent", "fellow", "formula",
-          "genuine", "gorgeous", "fundamental", "funeral", "gallery", "estimate",
-          "garlic", "grocery", "gross", "guidance", "glove", "headquarters", "highway", "implication",
-          "hence", "hesitate", "highway", "implement", "impose", "incident", "indeed",  "household", "imply",
-          "incorporate", "institute", "instance", "inquiry", "investigate", "investment", "jury", "keen",
-          "interpret", "indeed", "incredible", "interval", "intervention", "ladder",
-          "landlord", "literally", "literary", "loan", "liberal", "loose", "lounge",
-          "manufacturer", "margin", "marvellous", "mechanism", "medieval", "mental", "merely",
-          "mineral", "motorway", "mortgage", "negotiate", "nevertheless", "opponent",
-          "overall", "overcome", "overseas", "pace", "panel", "parcel", "parliament", "peak", "pitch"
-        ];
+      "chuck", "consist", "constitute", "consult",
+      "comprise", "concept", "conviction",
+      "cheque", "circuit", "consistent", "consumption",
+      "component", "deposit", "crew", "crisis", "dominant", "dominate",
+      "deliberately", "discount", "dump",
+      "enquiry", "facility", "expansion", "exhibition",
+      "equipment", "equivalent", "fellow", "formula",
+      "genuine", "gorgeous", "fundamental", "funeral", "gallery", "estimate",
+      "garlic", "grocery", "gross", "guidance", "glove", "headquarters", "highway", "implication",
+      "hence", "hesitate", "highway", "implement", "impose", "incident", "indeed", "household", "imply",
+      "incorporate", "institute", "instance", "inquiry", "investigate", "investment", "jury", "keen",
+      "interpret", "indeed", "incredible", "interval", "intervention", "ladder",
+      "landlord", "literally", "literary", "loan", "liberal", "loose", "lounge",
+      "manufacturer", "margin", "marvellous", "mechanism", "medieval", "mental", "merely",
+      "mineral", "motorway", "mortgage", "negotiate", "nevertheless", "opponent",
+      "overall", "overcome", "overseas", "pace", "panel", "parcel", "parliament", "peak", "perspective",
+      "pension", "personnel", "philosophy", "pitch", "pose", "possess", "premise", "presence",
+      "promote", "promotion", "prompt", "proposal", "proportion", "propose", "prosecution",
+      "prospect", "provision", "pudding", "purchase", "purse", "pursue", "qualify", "quantity",
+      "quid", "rapid", "ratio", "receipt", "reception", "recommendation", "reform",
+      "regime", "region", "reinforce", "regulation", "relevant", "religious", "remark", "remarkable",
+      "represent", "reputaton", "request", "resignation", "reserve", "resignation", "resist",
+      "resolution", "resolve", "resort", "restrict", "reveal", "revenue", "rival", "roof", "routine",
+      "sack", "salary", "sausage", "schedule", "screw", "scheme", "sector", "seize", "shave", "shed",
+      "shelter", "shove", "shrug"
+    ];
 
     function shuffleArray(array) {
-          let curId = array.length;
-          //There remain elements to shuffle
-          while (0 !== curId) {
-                //Pick a remaining element
-                let randId = Math.floor(Math.random() * curId);
-                curId -= 1;
-                //Swap it with the current element.
-                let tmp = array[curId];
-                array[curId] = array[randId];
-                array[randId] = tmp;
-              }
-          return array;
-        }
+      let curId = array.length;
+      //There remain elements to shuffle
+      while (0 !== curId) {
+        //Pick a remaining element
+        let randId = Math.floor(Math.random() * curId);
+        curId -= 1;
+        //Swap it with the current element.
+        let tmp = array[curId];
+        array[curId] = array[randId];
+        array[randId] = tmp;
+      }
+      return array;
+    }
     //Usage of shuffle
     texts = shuffleArray(texts);
 
@@ -127,64 +136,64 @@ body {
     elts.text2.textContent = texts[(textIndex + 1) % texts.length];
 
     function doMorph() {
-          morph -= cooldown;
-          cooldown = 0;
+      morph -= cooldown;
+      cooldown = 0;
 
-          let fraction = morph / morphTime;
+      let fraction = morph / morphTime;
 
-          if (fraction > 1) {
-                cooldown = cooldownTime;
-                fraction = 1;
-              }
+      if (fraction > 1) {
+        cooldown = cooldownTime;
+        fraction = 1;
+      }
 
-          setMorph(fraction);
-        }
+      setMorph(fraction);
+    }
 
     // A lot of the magic happens here, this is what applies the blur filter to the text.
     function setMorph(fraction) {
-          // fraction = Math.cos(fraction * Math.PI) / -2 + .5;
+      // fraction = Math.cos(fraction * Math.PI) / -2 + .5;
 
-          elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
-          elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+      elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+      elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
 
-          fraction = 1 - fraction;
-          elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
-          elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+      fraction = 1 - fraction;
+      elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+      elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
 
-          elts.text1.textContent = texts[textIndex % texts.length];
-          elts.text2.textContent = texts[(textIndex + 1) % texts.length];
-        }
+      elts.text1.textContent = texts[textIndex % texts.length];
+      elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+    }
 
     function doCooldown() {
-          morph = 0;
+      morph = 0;
 
-          elts.text2.style.filter = "";
-          elts.text2.style.opacity = "100%";
+      elts.text2.style.filter = "";
+      elts.text2.style.opacity = "100%";
 
-          elts.text1.style.filter = "";
-          elts.text1.style.opacity = "0%";
-        }
+      elts.text1.style.filter = "";
+      elts.text1.style.opacity = "0%";
+    }
 
     // Animation loop, which is called every frame.
     function animate() {
-          requestAnimationFrame(animate);
+      requestAnimationFrame(animate);
 
-          let newTime = new Date();
-          let shouldIncrementIndex = cooldown > 0;
-          let dt = (newTime - time) / 1000;
-          time = newTime;
+      let newTime = new Date();
+      let shouldIncrementIndex = cooldown > 0;
+      let dt = (newTime - time) / 1000;
+      time = newTime;
 
-          cooldown -= dt;
+      cooldown -= dt;
 
-          if (cooldown <= 0) {
-                if (shouldIncrementIndex) {
-                      textIndex++;
-                    }
-                doMorph();
-              } else {
-                    doCooldown();
-                  }
+      if (cooldown <= 0) {
+        if (shouldIncrementIndex) {
+          textIndex++;
         }
+        doMorph();
+      } else {
+        doCooldown();
+      }
+    }
 
     // Start the animation.
     animate();
