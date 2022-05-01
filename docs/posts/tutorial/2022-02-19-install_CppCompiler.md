@@ -80,9 +80,11 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 不支持 Linux 的那一套系统调用接口。
 
 #### 安装
-[这里](https://winlibs.com/) 提供下载速度较快的安装，同时包含 GCC 最新版本（推荐）
+[这里](https://github.com/mmozeiko/build-gcc-mingw/releases/tag/latest) 提供比较实用的安装（包括 GCC、MinGW-w64、GDB、Make），但它构建静态链接到编译器的依赖项，并且仅提供静态运行时库（也就是不会有 `.dll` 的依赖）。
 
-[在这儿](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/) 可以进行较为传统的安装，一般的安装版本会比 [GCC 官网](https://gcc.gnu.org) 发布的最新版本稍后，而且一般是第一个稳定版本。
+[Winlibs.com](https://winlibs.com/) / [On GitHub](https://github.com/brechtsanders/winlibs_mingw/releases/latest) 包含 GCC 最新版本，同时附带除前者外 LLVM/Clang/LLD/LLDB（可选）、Ninja、NASM、doxygen 等更多编译及调试工具的安装，不过解压后文件会较大。
+
+[SourceForge](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/) 上可以进行较为传统的安装，其版本一般会比 [GCC 官网](https://gcc.gnu.org) 发布的最新版本稍后，更新迭代速度较慢，而且通常是第一个稳定版本。
 
 
 ## 对于 OIer……
