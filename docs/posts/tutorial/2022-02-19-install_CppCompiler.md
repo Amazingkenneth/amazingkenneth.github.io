@@ -116,7 +116,7 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 - C++编译器：C:\Program Files (x86)\Dev-Cpp\MinGW64\bin\g++.exe
 ```
 {% endcapture %}
-{% assign some_var = some_var | line_numbers: false | markdownify %}
+{% assign some_var = some_var | markdownify %}
 {% include fix_linenos.html code=some_var %}
 
 接着在文件资源管理器中输入对应的路径，（在这个例子中是 `C;\Program Files (x86)\Dev-Cpp\` 把下载好的文件解压后放在这个地方，如果是从 `winlibs.com` 下载解压的，记得要把 `mingw64` 的文件夹名称重命名为 `MinGW64`，然后就可以了。
