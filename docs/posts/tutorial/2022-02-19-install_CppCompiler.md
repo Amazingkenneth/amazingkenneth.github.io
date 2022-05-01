@@ -43,7 +43,7 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 当前主流的 C++ 编译器有这样几个：
 1. Clang
 2. Microsoft Visual C++
-3. GCC(G++)
+3. GCC (G++) 【推荐】
 
 ## Clang
 它是遵循 Apache 2.0 协议的开源编译器。它在 Windows 上的安装是最简单的，直接从 [GitHub 的仓库](https://github.com/llvm/llvm-project/releases) 上的 Assets 中找到 .exe 文件下载并安装就可以了，只是文件稍大，需要时间。
@@ -74,15 +74,16 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 它 **只能** 运行 C++ 的运行时库和 Windows API，不支持 Linux 的 API。
 好处是占用磁盘空间小，能够编译出原生 Windows 的 exe 程序。
 > 注意
+>
 > 使用 Windows API 时，有的接口还需要调用 `w32api.h`，例如在使用系统套接字（socket）时，需要加 `-lWs2_32` 的编译选项
 
 #### 缺点
 不支持 Linux 的那一套系统调用接口。
 
 #### 安装
-[这里](https://github.com/mmozeiko/build-gcc-mingw/releases/tag/latest) 提供比较实用的安装（包括 GCC、MinGW-w64、GDB、Make），但它构建静态链接到编译器的依赖项，并且仅提供静态运行时库（也就是不会有 `.dll` 的依赖）。
+[这里](https://github.com/mmozeiko/build-gcc-mingw/releases/tag/latest) 提供比较实用的安装（包括 GCC 最新版本、MinGW-w64、GDB、Make），但它构建静态链接到编译器的依赖项，并且仅提供静态运行时库（也就是不会有 `.dll` 的依赖）。【推荐】
 
-[Winlibs.com](https://winlibs.com/) / [On GitHub](https://github.com/brechtsanders/winlibs_mingw/releases/latest) 包含 GCC 最新版本，同时附带除前者外 LLVM/Clang/LLD/LLDB（可选）、Ninja、NASM、doxygen 等更多编译及调试工具的安装，不过解压后文件会较大。
+[Winlibs.com](https://winlibs.com/) / [GitHub上的仓库](https://github.com/brechtsanders/winlibs_mingw/releases/latest) 附带除前者有的工具外 LLVM/Clang/LLD/LLDB（可选）、Ninja、NASM、doxygen 等更多编译及调试工具的安装，不过解压后文件会较大。
 
 [SourceForge](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/) 上可以进行较为传统的安装，其版本一般会比 [GCC 官网](https://gcc.gnu.org) 发布的最新版本稍后，更新迭代速度较慢，而且通常是第一个稳定版本。
 
@@ -112,7 +113,7 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 {% capture code_fence %}
 ```
 处理 C++ 源文件...
-- C++编译器：C;\Program Files (x86)\Dev-Cpp\MinGW64\bin\g++.exe
+- C++编译器：C:\Program Files (x86)\Dev-Cpp\MinGW64\bin\g++.exe
 ```
 {% endcapture %}
 {% assign code_fence = code_fence | markdownify %}
@@ -123,15 +124,15 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 ### 效果演示（命令提示符下）
 
 如图所示，（随便）写一个会发生运行时错误的 C++ 程序：
-![](https://amazingkenneth.github.io/images/compile.png)
+![Compile](https://amazingkenneth.github.io/images/compile.png)
 尝试运行，会发现并没有输出本应有的 `is a error!`
-![](https://amazingkenneth.github.io/images/erroccurs.png)
+![Error Occurs](https://amazingkenneth.github.io/images/erroccurs.png)
 如果想知道错误出在了哪里，可以这样做：
 1. 在命令提示符中输入 `gdb`，后面跟着可执行文件的名称，这一步之前要确认编译时有开 ` -g`（生成调试信息）选项。
-![](https://amazingkenneth.github.io/images/gdb.png)
+![Open GDB](https://amazingkenneth.github.io/images/gdb.png)
 2. 在紧接着的提示符中输入 `run`（或者直接简写为 `r`）。
-![](https://amazingkenneth.github.io/images/run.png)
-![](https://amazingkenneth.github.io/images/typerun.png)
+![Then,](https://amazingkenneth.github.io/images/run.png)
+![Run](https://amazingkenneth.github.io/images/typerun.png)
 3. 运行程序后会发现没有正常终止，而是返回了 `SIGSEGV`，即段错误，内存访问越界。它也明确指出了发生错误的位置：
 
 {% capture code_fence %}
@@ -141,7 +142,7 @@ main () at a.cpp:4
 ```
 {% endcapture %}
 {% assign code_fence = code_fence | markdownify %}
-{% include fix_linenos.html code=code_fence %}
+{% include fix_linenos.html code=code_fence line_numbers=false %}
 ![](https://amazingkenneth.github.io/images/causeerror.png)
 最后找到错误后关闭 gdb，不能直接用 `Ctrl + C` 结束进程，而是应该输入 `quit`（或者直接简写为 `q`）。
 ![](https://amazingkenneth.github.io/images/quit.png)
