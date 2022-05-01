@@ -117,7 +117,6 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 ```
 {% endcapture %}
 {% assign code_fence = code_fence | markdownify %}
-{% include fix_linenos.html code=code_fence %}
 
 接着在文件资源管理器中输入对应的路径，（在这个例子中是 `C;\Program Files (x86)\Dev-Cpp\` 把下载好的文件解压后放在这个地方，如果是从 `winlibs.com` 下载解压的，记得要把 `mingw64` 的文件夹名称重命名为 `MinGW64`，然后就可以了。
 
@@ -142,7 +141,7 @@ main () at a.cpp:4
 ```
 {% endcapture %}
 {% assign code_fence = code_fence | markdownify %}
-{% include fix_linenos.html code=code_fence line_numbers=false %}
+{% include fix_linenos.html code=code_fence %}
 ![](https://amazingkenneth.github.io/images/causeerror.png)
 最后找到错误后关闭 gdb，不能直接用 `Ctrl + C` 结束进程，而是应该输入 `quit`（或者直接简写为 `q`）。
 ![](https://amazingkenneth.github.io/images/quit.png)
