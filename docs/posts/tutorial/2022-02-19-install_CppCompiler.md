@@ -81,7 +81,7 @@ GCC(G++) 是遵循 GNU GPLv3 协议的开源编译器，对新标准的支持最
 不支持 Linux 的那一套系统调用接口。
 
 #### 安装
-[这里](https://github.com/mmozeiko/build-gcc-mingw/releases/tag/latest) 提供比较实用的安装（包括 GCC 最新版本、MinGW-w64、GDB、Make），但它构建静态链接到编译器的依赖项，并且仅提供静态运行时库（也就是不会有 `.dll` 的依赖）。【推荐】
+[这里](https://github.com/mmozeiko/build-gcc-mingw/releases/latest) 提供比较实用的安装（包括 GCC 最新版本、MinGW-w64、GDB、Make），但它构建静态链接到编译器的依赖项，并且仅提供静态运行时库（也就是不会有 `.dll` 的依赖）。【推荐】
 
 [Winlibs.com](https://winlibs.com/) / [GitHub上的仓库](https://github.com/brechtsanders/winlibs_mingw/releases/latest) 附带除前者有的工具外 LLVM/Clang/LLD/LLDB（可选）、Ninja、NASM、doxygen 等更多编译及调试工具的安装，不过解压后文件会较大。
 
