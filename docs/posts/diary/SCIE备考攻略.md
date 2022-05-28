@@ -91,11 +91,14 @@ Reading 部分的试题是打乱的，你不会知道下一题会是什么。总
 > 3. [Vocabulary](https://learnenglish.britishcouncil.org/vocabulary)
 
 这里提供了一些比较好的学习资源，比较推荐 `Listening` 和 `Writing`，因为与考试的题型都比较类似（Task 1)，都是四选一，练起来会比较方便。
+
 ---
 
 #### [Vocabulary.com](https://www.vocabulary.com/)
 这里也提供了一些比较好的有关词汇的资源，包括[在线词典](https://www.vocabulary.com/dictionary/)（英英）、[Vocabulary Jam](https://www.vocabulary.com/jam/)、按照词频出 [Vocabulary Lists](https://www.vocabulary.com/lists/vocabgrabber)（VocabGrabber）的功能等，结合它的智能系统记单词效果还可以，值得一试。
+
 ---
+
 #### [BooksVooks](https://booksvooks.com/)
 这里提供数万书籍的免费在线阅读，可以把它和 [VocabGrabber](https://www.vocabulary.com/lists/vocabgrabber) 结合使用，看完的书中的单词可以直接在 [Vocabulary.com](https://www.vocabulary.com/play/) 这里得到练习，巩固提升。
 
