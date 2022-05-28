@@ -82,16 +82,15 @@ Reading 部分的试题是打乱的，你不会知道下一题会是什么。总
 这也是一个官方指定的练习平台，上面有一堆可能的 Essay 题目，其中都有分门别类地整理好以供快速找到适合难度的写作练习。建议注册个账号后再打开 [Workbooks](https://writeandimprove.com/workbooks#/wi-workbooks) 进行写作，就可以在每写完一篇后得到网站的一个 “Check”，来看看自己有没有进步。
 
 #### [BritishCouncil](https://learnenglish.britishcouncil.org)
----
-  1. [Skills](https://learnenglish.britishcouncil.org/skills), including
-   - [Listening](https://learnenglish.britishcouncil.org/skills/listening)
-   - [Reading](https://learnenglish.britishcouncil.org/skills/reading)
-   - [Writing](https://learnenglish.britishcouncil.org/skills/writing)
-   - [Speaking](https://learnenglish.britishcouncil.org/skills/speaking)
-  2. [Grammar](https://learnenglish.britishcouncil.org/grammar)
-  3. [Vocabulary](https://learnenglish.britishcouncil.org/vocabulary)
----
+> 1. [Skills](https://learnenglish.britishcouncil.org/skills), including
+> - [Listening](https://learnenglish.britishcouncil.org/skills/listening)
+> - [Reading](https://learnenglish.britishcouncil.org/skills/reading)
+> - [Writing](https://learnenglish.britishcouncil.org/skills/writing)
+> - [Speaking](https://learnenglish.britishcouncil.org/skills/speaking)
+> 2. [Grammar](https://learnenglish.britishcouncil.org/grammar)
+> 3. [Vocabulary](https://learnenglish.britishcouncil.org/vocabulary)
 
+---
 这里提供了一些比较好的学习资源，比较推荐 `Listening` 和 `Writing`，因为与考试的题型都比较类似（Task 1)，都是四选一，练起来会比较方便。
 
 #### [Vocabulary.com](https://www.vocabulary.com/)
