@@ -143,9 +143,57 @@ main () at a.cpp:4
 {% endcapture %}
 {% assign code_fence = code_fence | markdownify %}
 {% include fix_linenos.html code=code_fence %}
-![](https://amazingkenneth.github.io/images/causeerror.png)
+![CausedError](https://amazingkenneth.github.io/images/causeerror.png)
 最后找到错误后关闭 gdb，不能直接用 `Ctrl + C` 结束进程，而是应该输入 `quit`（或者直接简写为 `q`）。
-![](https://amazingkenneth.github.io/images/quit.png)
+![Quit](https://amazingkenneth.github.io/images/quit.png)
 在 gdb 的询问中回答 `Y`。
-![](https://amazingkenneth.github.io/images/back.png)
+![ForSure](https://amazingkenneth.github.io/images/back.png)
+下面这里提供一个示例
+{% capture code_fence %}
+```powershell
+Windows PowerShell
+版权所有（C） Microsoft Corporation。保留所有权利。
+
+安装最新的 PowerShell，了解新功能和改进！https://aka.ms/PSWindows
+
+PS C:\> cd C:\Users\amazi # 这一行用于切换到你的源文件目录下，找到你的源代码目录
+PS C:\Users\amazi> g++ -g a.cpp -o a.exe # “ -g”选项表示生成调试信息以供调试，“ -o a.exe”表示把生成的可执行文件命名为“a.exe”
+PS C:\Users\amazi> gdb a.exe # 启动GDB开始调试
+GNU gdb (GDB) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-w64-mingw32".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.exe...
+(gdb) run
+Starting program: C:\Users\amazi\a.exe
+[New Thread 10848.0x3668]
+
+Thread 1 received signal SIGSEGV, Segmentation fault.
+main () at a.cpp:4
+4         std::cout << s.top() << "is a error\n";
+(gdb) quit
+A debugging session is active.
+
+
+        Inferior 1 [process 10848] will be killed.
+
+Quit anyway? (y or n) y
+PS C:\Users\amazi>
+```
+{% endcapture %}
+{% assign code_fence = code_fence | markdownify %}
+{% include fix_linenos.html code=code_fence %}
+![FirstPage](https://amazingkenneth.github.io/images/firstpage.png)
+![SecondPage](https://amazingkenneth.github.io/images/secondpage.png)
 对于更多 `gdb` 这一强大的调试工具的使用，详见 [Documention](https://www.sourceware.org/gdb/documentation/)。
