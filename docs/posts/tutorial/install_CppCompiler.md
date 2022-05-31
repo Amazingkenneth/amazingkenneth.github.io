@@ -148,7 +148,10 @@ main () at a.cpp:4
 ![Quit](https://amazingkenneth.github.io/images/quit.png)
 在 gdb 的询问中回答 `Y`。
 ![ForSure](https://amazingkenneth.github.io/images/back.png)
-下面这里提供一个示例
+#### 总截屏
+下面这个是上面展示的示例
+- 你可以在 `C:\……> ` 或者 `(GDB) ` 后面输入命令
+ 
 {% capture code_fence %}
 ```powershell
 Windows PowerShell
