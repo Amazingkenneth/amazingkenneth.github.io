@@ -11,4 +11,4 @@ permalink: /docs/zh-cn
 [在 GitHub 上查看](https://github.com/Amazingkenneth/amazingkenneth.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ## 一些链接
-[Flying Pineapple PPT Demo](https://1drv.ms/p/s!Ak_Cwjh5LdfjjweXTnTk56Hqm1TY?e=nqHnzT)
+[Flying Pineapple PPT Demo](https://1drv.ms/p/s!BE_Cwjh5LdfjjwdwIL_Y9ieA3T6G?e=z1RAQaI5YkagQXtBHvvXRg&at=9)
