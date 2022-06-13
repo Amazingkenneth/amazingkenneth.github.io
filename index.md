@@ -17,3 +17,6 @@ permalink: /
 **English** [简体中文](https://amazingkenneth.github.io/docs/zh-cn)
 
 [View it on GitHub](https://github.com/Amazingkenneth/amazingkenneth.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+## Some Links
+[Flying Pineapple PPT Demo](https://1drv.ms/p/s!Ak_Cwjh5LdfjjweXTnTk56Hqm1TY?e=nqHnzT)
