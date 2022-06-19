@@ -20,3 +20,5 @@ permalink: /
 
 ## Some Links
 [Flying Pineapple PPT Demo](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Famazingkenneth.github.io%2Fdl%2Fflyingpineapple-v3.pptx&wdOrigin=BROWSELINK)
+
+![Hello](https://amazingkenneth.github.io/images/hello.gif)

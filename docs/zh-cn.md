@@ -12,3 +12,6 @@ permalink: /docs/zh-cn
 
 ## 一些链接
 [Flying Pineapple PPT Demo](https://1drv.ms/p/s!BE_Cwjh5LdfjjwdwIL_Y9ieA3T6G?e=z1RAQaI5YkagQXtBHvvXRg&at=9)
+
+
+![Hello](https://amazingkenneth.github.io/images/hello.gif)
