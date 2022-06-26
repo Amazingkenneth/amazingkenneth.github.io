@@ -10,8 +10,7 @@ permalink: /docs/zh-cn
 
 [在 GitHub 上查看](https://github.com/Amazingkenneth/amazingkenneth.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
 
-## 一些链接
-[Flying Pineapple PPT Demo](https://1drv.ms/p/s!BE_Cwjh5LdfjjwdwIL_Y9ieA3T6G?e=z1RAQaI5YkagQXtBHvvXRg&at=9)
-
+<!--## 一些链接
+[Flying Pineapple PPT Demo](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Famazingkenneth.github.io%2Fdl%2Fflyingpineapple-v3.pptx&wdOrigin=BROWSELINK)-->
 
 ![Hello](https://amazingkenneth.github.io/images/hello.gif)
