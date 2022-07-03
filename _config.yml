@@ -53,7 +53,7 @@ aux_links_new_tab: false
 back_to_top: true
 back_to_top_text: "Back to top"
 
-footer_content: "This git pages is distributed by <a href=\"https://choosealicense.com/licenses/mit/\">MIT license</a>."
+footer_content: "This site is distributed by <a href=\"https://choosealicense.com/licenses/mit/\">MIT license</a>."
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
