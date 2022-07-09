@@ -6,6 +6,12 @@ permalink: /7
 <body>
   <!-- Explanation in JS tab -->
 
+  <script type="text/javascript">
+    function forward() {
+      window.open("https://youdao.com/result?word="+texts[(textIndex+1) % texts.length]+"&lang=en")
+    }
+    document.onclick = forward;
+  </script>
   <!-- The two texts -->
   <div id="container">
     <span id="text1"></span>
@@ -34,10 +40,14 @@ permalink: /7
 
     /* Cool font from Google Fonts! */
     @import url("https://fonts.googleapis.com/css?family=Merienda");
-    body {
-      margin: 0px;
+    html {
+      height: 100%;
     }
 
+    body {
+      margin: 0px;
+      height: 100%;
+    }
     #container {
       /* Center the text in the viewport. */
       position: absolute;
