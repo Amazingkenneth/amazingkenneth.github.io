@@ -1,14 +1,13 @@
 ---
-permalink: /8
+permalink: /12
 ---
 <!DOCTYPE html>
 
 <body>
   <!-- Explanation in JS tab -->
-
   <script type="text/javascript">
     function forward() {
-      window.open("https://youdao.com/result?word="+texts[(textIndex+1) % texts.length]+"&lang=en")
+      window.open("https://youdao.com/result?word=" + texts[(textIndex + 1) % texts.length] + "&lang=en")
     }
     document.onclick = forward;
   </script>
@@ -37,9 +36,9 @@ permalink: /8
   </title>
   <style>
     /* Explanation in JS tab */
-
     /* Cool font from Google Fonts! */
     @import url("https://fonts.googleapis.com/css?family=Merienda");
+
     html {
       height: 100%;
     }
@@ -48,6 +47,7 @@ permalink: /8
       margin: 0px;
       height: 100%;
     }
+
     #container {
       /* Center the text in the viewport. */
       position: absolute;
@@ -79,112 +79,17 @@ permalink: /8
     /*
     This pen cleverly utilizes SVG filters to create a "Morphing Text" effect. Essentially, it layers 2 text elements on top of each other, and blurs them depending on which text element should be more visible. Once the blurring is applied, both texts are fed through a threshold filter together, which produces the "gooey" effect. Check the CSS - Comment the #container rule's filter out to see how the blurring works!
          */
-
     const elts = {
       text1: document.getElementById("text1"),
       text2: document.getElementById("text2")
     };
-
     // The strings to morph between. You can change these to anything you want!
     texts = [
-      "concomitant",
-      "assert",
-      "tragic",
-      "puddle",
-      "accredit",
-      "former",
-      "narrate",
-      "proponent",
-      "dubious",
-      "awareness",
-      "informant",
-      "signify",
-      "pensive",
-      "magnet",
-      "cubism",
-      "melodic",
-      "blush",
-      "healing",
-      "drastic",
-      "mythology",
-      "fin",
-      "roe",
-      "ease",
-      "mold",
-      "blizzard",
-      "rehabilitate",
-      "distract",
-      "awareness",
-      "tactic",
-      "emerge",
-      "offensive",
-      "cite",
-      "bolster",
-      "humorous",
-      "quasar",
-      "dormant",
-      "shirk",
-      "pattern",
-      "deplete",
-      "aluminum",
-      "hierarchy",
-      "shed",
-      "torpor",
-      "overnight",
-      "stampede",
-      "lust",
-      "mismanage",
-      "falter",
-      "empiricism",
-      "snide",
-      "cherish",
-      "blaze",
-      "frail",
-      "negligent",
-      "complaint",
-      "disastrous",
-      "melodious",
-      "feign",
-      "dignify",
-      "abate",
-      "bureaucracy",
-      "confident",
-      "odd",
-      "mutual",
-      "diplomat",
-      "fable",
-      "propensity",
-      "release",
-      "noted",
-      "swift",
-      "concept",
-      "discard",
-      "insight",
-      "fortuitous",
-      "refraction",
-      "willful",
-      "silica",
-      "cactus",
-      "mode",
-      "ridiculous",
-      "grip",
-      "item",
-      "franchise",
-      "x-ray",
-      "complex",
-      "rigor",
-      "academic",
-      "promote",
-      "status",
-      "junvenile",
-      "emotional",
-      "apportion",
-      "vacant",
-      "lettuce",
-      "competence",
-      "agile",
-      "fragile",
-      "communal"
+      "intrude",
+      "scope",
+      "incinerate",
+      "wreck",
+      "yeast"
     ];
     function shuffleArray(array) {
       let curId = array.length;
