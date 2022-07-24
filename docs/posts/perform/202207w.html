@@ -16,7 +16,7 @@
   <h3 id="hh"></h3>
 </body>
 <script type="text/javascript">
-  var endDate = new Date(2022, 6, 31, 0, 0, 0);//年月日时分秒，月要减去1
+  var endDate = new Date(2022, 6, 31, 16, 30, 0);//年月日时分秒，月要减去1
   function DaoJiShi() {
     var now = new Date();
     var oft = Math.round((endDate - now) / 1000);
@@ -27,7 +27,7 @@
     if (day < 0 || hours < 0 || min < 0 || sec < 0) {
       var html = "2022 年 7 月汇报演出已结束，感谢观看";
     } else {
-      html = "距离 2022 年 7 月汇报演出还有 " + day + " 天 " + hours + " 时 " + min + " 分 " + sec + " 秒";
+      html = "距离 2022 年 7 月汇报演出<br/>还有 " + day + " 天 " + hours + " 时 " + min + " 分 " + sec + " 秒";
     }
     hh.innerHTML = html;
   }
@@ -39,7 +39,7 @@
 <style type="text/css">
   #hh {
     text-align: center;
-    font-size: 55px;
+    font-size: 50px;
   }
 </style>
 
