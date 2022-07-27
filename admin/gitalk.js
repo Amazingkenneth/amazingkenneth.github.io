@@ -4,7 +4,6 @@ var gitalk = new Gitalk({
   repo: 'amazingkenneth.github.io',
   owner: 'Amazingkenneth',
   admin: ['Amazingkenneth'],
-  distractionFreeMode: false,
   id: location.pathname,
   perPage: 10,
   createIssueManually: true,
