@@ -7,7 +7,6 @@ var gitalk = new Gitalk({
   distractionFreeMode: false,
   id: location.pathname,
   perPage: 10,
-  pagerDirection: last,
   createIssueManually: true,
   enableHotKey: true,
   distractionFreeMode: true
