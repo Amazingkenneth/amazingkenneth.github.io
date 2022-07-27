@@ -20,13 +20,13 @@
     <div id="gitalk-container"></div>
     <script>
         var gitalk = new Gitalk({
-            clientID: '{{ site.gitalk.clientID }}',
-            clientSecret: '{{ site.gitalk.clientSecret }}',
-            repo: '{{ site.gitalk.repo }}',
-            owner: '{{ site.gitalk.owner }}',
+            clientID: '24c5d5ae0387e551cf41',
+            clientSecret: 'f2999b8c00c3c20d5c6213aa34d22fcad5c3edd4',
+            repo: 'amazingkenneth.github.io',
+            owner: 'Amazingkenneth',
             admin: ['Amazingkenneth'],
-            distractionFreeMode: '{{ site.gitalk.distractionFreeMode }}',
-            id: md5(location.pathname)     // 用于标记评论是哪个页面的，确保唯一，并且长度小于50
+            distractionFreeMode: false,
+            id: location.pathname     // 用于标记评论是哪个页面的，确保唯一，并且长度小于50
         })
         gitalk.render('gitalk-container');    // 渲染Gitalk评论组件
     </script>
