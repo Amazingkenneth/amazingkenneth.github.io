@@ -1,3 +1,7 @@
+plugins:
+  - jekyll-seo-tag
+  - gitalk/gitalk
+  
 remote_theme: just-the-docs/just-the-docs
 title: Hi, there?
 description: Keep track of the good things in the daily life.
@@ -74,10 +78,6 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 # e.g, UA-1234567-89
 ga_tracking: G-YSJFRWRPT8
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
-
-plugins:
-  - jekyll-seo-tag
-  - gitalk
 
 kramdown:
   syntax_highlighter_opts:
