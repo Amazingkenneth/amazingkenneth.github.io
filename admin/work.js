@@ -1,20 +1,3 @@
----
-title: 主页
-nav_order: 1
-description: "欢迎您来到 Yankang 的在线笔记本！"
-permalink: /docs/zh-cn
----
-# 欢迎您来到 Yankang 的在线笔记本！
-
-**简体中文** [English](https://amazingkenneth.github.io)
-
-[在 GitHub 上查看](https://github.com/Amazingkenneth/amazingkenneth.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
-
-<!--## 一些链接
-[Flying Pineapple PPT Demo](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Famazingkenneth.github.io%2Fdl%2Fflyingpineapple-v3.pptx&wdOrigin=BROWSELINK)-->
-
-![Hello](https://amazingkenneth.github.io/images/hello.gif)
-<script>
 (function (c, l, a, r, i, t, y) {
   c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
   t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
@@ -35,4 +18,17 @@ if (typeof media.addEventListener === 'function') {
 } else if (typeof media.addListener === 'function') {
     media.addListener(callback);
 }
-</script>
+var title = location.pathname.substring(0, 49);
+var gitalk = new Gitalk({
+  clientID: '24c5d5ae0387e551cf41',
+  clientSecret: 'f2999b8c00c3c20d5c6213aa34d22fcad5c3edd4',
+  repo: 'amazingkenneth.github.io',
+  owner: 'Amazingkenneth',
+  admin: ['Amazingkenneth'],
+  id: title,
+  perPage: 10,
+  createIssueManually: true,
+  enableHotKey: true,
+  distractionFreeMode: true
+})
+gitalk.render('gitalk-container');    // 渲染Gitalk评论组件

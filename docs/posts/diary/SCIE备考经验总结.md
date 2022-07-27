@@ -3,32 +3,9 @@ title: SCIE 备考经验总结
 date: 2022-04-09
 parent: diary
 ---
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "bb27tb3p62");
-</script>
 
 # SCIE 备考经验总结
 {: .no_toc }
-
-<button class="btn js-toggle-dark-mode">Switch to Dark color scheme</button>
-
-<script>
-const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-
-jtd.addEvent(toggleDarkMode, 'click', function(){
-  if (jtd.getTheme() === 'dark') {
-    jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Switch to dark color scheme';
-  } else {
-    jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Return to the light scheme';
-  }
-});
-</script>
 
 <details open markdown="block">
   <summary>
@@ -110,4 +87,4 @@ Reading 部分的试题是打乱的，你不会知道下一题会是什么。总
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <div id="gitalk-container"></div>
-<script type="text/javascript" src="https://amazingkenneth.github.io/admin/gitalk.js"></script>
+<script type="text/javascript" src="https://amazingkenneth.github.io/admin/work.js"></script>

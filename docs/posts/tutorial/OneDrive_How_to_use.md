@@ -4,32 +4,9 @@ date: '2022-02-12'
 parent: tutorial
 
 ---
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "bb27tb3p62");
-</script>
-
 # OneDrive 使用指北
 {: .no_toc }
 
-<button class="btn js-toggle-dark-mode">Switch to dark color scheme</button>
-
-<script>
-const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-
-jtd.addEvent(toggleDarkMode, 'click', function(){
-  if (jtd.getTheme() === 'dark') {
-    jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Switch to dark color scheme';
-  } else {
-    jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Return to the light scheme';
-  }
-});
-</script>
 Windows 10、Windows 11 中其实已经预装了 OneDrive，新用户一般会分配 5GB 的空间，OneDrive 上的文件可以在 Microsoft 的几乎所有办公应用中进行文件同步。
 
 Setup 文件在 [这里](https://go.microsoft.com/fwlink/p/?LinkID=2182910) ，下载安装即可
@@ -45,4 +22,4 @@ Setup 文件在 [这里](https://go.microsoft.com/fwlink/p/?LinkID=2182910) ，�
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <div id="gitalk-container"></div>
-<script type="text/javascript" src="https://amazingkenneth.github.io/admin/gitalk.js"></script>
+<script type="text/javascript" src="https://amazingkenneth.github.io/admin/work.js"></script>
