@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Gitalk</title>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <style>
+        #gitalk-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    
+<div id="gitalk-container"></div>
+<script>
+var gitalk = new Gitalk({
+  clientID: '{{ site.gitalk.clientID }}',
+  clientSecret: '{{ site.gitalk.clientSecret }}', 
+  repo: '{{ site.gitalk.repo }}', 
+  owner: '{{ site.gitalk.owner }}', 
+  admin: ['Amazingkenneth'], 
+  distractionFreeMode: '{{ site.gitalk.distractionFreeMode }}'
+  id: md5(location.pathname)     // 用于标记评论是哪个页面的，确保唯一，并且长度小于50
+})
+gitalk.render('gitalk-container');    // 渲染Gitalk评论组件
+</body>
+
+</html>
