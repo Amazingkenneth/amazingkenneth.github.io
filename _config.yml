@@ -95,8 +95,8 @@ compress_html:
 
 gitalk:
   enable: true
-  ClientID: f9ee7f7a7016657491b3 #Client ID,填入上一步获取的ID
-  ClientSecret: c364497e64a7cfc7fdb1aaea2262f3515e9dd2a1 #Client Secret，填入上一步获取的ID
+  clientID: f9ee7f7a7016657491b3 #Client ID,填入上一步获取的ID
+  clientSecret: c364497e64a7cfc7fdb1aaea2262f3515e9dd2a1 #Client Secret，填入上一步获取的ID
   repo: amazingkenneth.github.io #你要存放的项目名,如果博客部署在github可以放一起
   owner: Amazingkenneth #这个项目名的拥有者（GitHub账号或组织）
   admin: ['Amazingkenneth'] #管理员用户
