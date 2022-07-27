@@ -101,7 +101,7 @@ gitalk:
   repo: amazingkenneth.github.io #你要存放的项目名,如果博客部署在github可以放一起
   owner: Amazingkenneth #这个项目名的拥有者（GitHub账号或组织）
   admin: ['Amazingkenneth'] #管理员用户
-  id: location.pathname #页面ID
+  id: md5(location.pathname) #页面ID
   labels: ['Gitalk'] #GitHub issues的标签
   perPage: 10 #每页多少个评论
   pagerDirection: last #排序方式是从旧到新（first），还是从新到旧（last）
