@@ -5,6 +5,11 @@ var gitalk = new Gitalk({
   owner: 'Amazingkenneth',
   admin: ['Amazingkenneth'],
   distractionFreeMode: false,
-  id: location.pathname     // 用于标记评论是哪个页面的，确保唯一，并且长度小于50
+  id: location.pathname,
+  perPage: 10,
+  pagerDirection: last,
+  createIssueManually: true,
+  enableHotKey: true,
+  distractionFreeMode: true
 })
 gitalk.render('gitalk-container');    // 渲染Gitalk评论组件
