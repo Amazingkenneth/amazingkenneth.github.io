@@ -92,3 +92,18 @@ compress_html:
   profile: false
   # ignore:
   #   envs: all
+
+gitalk:
+  enable: true
+  ClientID: f9ee7f7a7016657491b3 #Client ID,填入上一步获取的ID
+  ClientSecret: c364497e64a7cfc7fdb1aaea2262f3515e9dd2a1 #Client Secret，填入上一步获取的ID
+  repo: amazingkenneth.github.io #你要存放的项目名,如果博客部署在github可以放一起
+  owner: Amazingkenneth #这个项目名的拥有者（GitHub账号或组织）
+  admin: ['Amazingkenneth'] #管理员用户
+  id: location.pathname #页面ID
+  labels: ['Gitalk'] #GitHub issues的标签
+  perPage: 10 #每页多少个评论
+  pagerDirection: last #排序方式是从旧到新（first），还是从新到旧（last）
+  createIssueManually: true #是否自动创建isssue，自动创建需要当前登录的用户为adminuser
+  enableHotKey: true #是否启用快捷键(cmd|ctrl + enter) 提交评论
+  distractionFreeMode: true
