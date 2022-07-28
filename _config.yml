@@ -4,7 +4,7 @@ plugins:
   
 remote_theme: just-the-docs/just-the-docs
 title: Hi, there?
-description: Keep track of the good things in the daily life.
+description: "Keep track of the good things in the daily life."
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
