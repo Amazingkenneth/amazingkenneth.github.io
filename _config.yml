@@ -1,6 +1,5 @@
 plugins:
   - jekyll-seo-tag
-  - gitalk/gitalk
   
 remote_theme: just-the-docs/just-the-docs
 title: Hi, there?
