@@ -6,24 +6,24 @@
 
 let media = window.matchMedia('(prefers-color-scheme: dark)');
 let callback = (e) => {
-    let prefersDarkMode = e.matches;
-    if (prefersDarkMode) {
-      jtd.setTheme('dark');
-    } else {
-      jtd.setTheme('light');
-    }
+  let prefersDarkMode = e.matches;
+  if (prefersDarkMode) {
+    jtd.setTheme('dark');
+  } else {
+    jtd.setTheme('light');
+  }
 };
 if (typeof media.addEventListener === 'function') {
-    media.addEventListener('change', callback);
+  media.addEventListener('change', callback);
 } else if (typeof media.addListener === 'function') {
-    media.addListener(callback);
+  media.addListener(callback);
 }
 
 var Title = document.title.substring(0, document.title.match(/ \|/).index);
 var pageid = location.href;
 pageid = pageid.substring(pageid.substring(0, pageid.lastIndexOf('/')).lastIndexOf('/'));
 if (pageid == null) {
-  pageid = location.pathname;
+  pageid = location.pathname.substring(0, 49);
 }
 pageid = decodeURI(pageid);
 
