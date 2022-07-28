@@ -18,14 +18,23 @@ if (typeof media.addEventListener === 'function') {
 } else if (typeof media.addListener === 'function') {
     media.addListener(callback);
 }
-var title = location.pathname.substring(0, 49);
+
+var Title = document.title.substring(0, document.title.match(/ \|/).index);
+var pageid = location.href;
+pageid = pageid.substring(pageid.substring(0, pageid.lastIndexOf('/')).lastIndexOf('/'));
+if (pageid == null) {
+  pageid = location.pathname;
+}
+pageid = decodeURI(pageid);
+
 var gitalk = new Gitalk({
   clientID: '24c5d5ae0387e551cf41',
   clientSecret: 'f2999b8c00c3c20d5c6213aa34d22fcad5c3edd4',
   repo: 'amazingkenneth.github.io',
   owner: 'Amazingkenneth',
   admin: ['Amazingkenneth'],
-  id: title,
+  id: pageid,
+  title: Title,
   perPage: 10,
   createIssueManually: true,
   enableHotKey: true,
