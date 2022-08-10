@@ -18,7 +18,8 @@ parent: tutorial
 
 ---
 
-[Vim](https://www.vim.org/) 是一款强大的文本编辑器，可以来 [此处](https://www.vim.org/download.php#pc) 下载，用熟后可以让你的输入和编辑速度提升许多。
+[Vim](https://www.vim.org/) 是一款强大的开源文本编辑器，可以来 [此处](https://www.vim.org/download.php#pc) 下载，用熟后可以让你的输入和编辑速度提升许多。
+[这里](https://github.com/vim/vim) 是它在 GitHub 上的仓库，README.md 文件中有它的详细介绍。
 
 不过，Vim 的快捷键可不是那么好记的，多加练习才能让它用起来得心应手，而这份 [Cheet Sheet](https://vim.rtorr.com/lang/zh_cn) 可供在线查阅，并且也藏了许多生僻的命令
 
