@@ -41,12 +41,12 @@ imap<c-cr> <Esc>:call Run()<cr> " 这里注意 “<c-cr>”、“<esc>” 之间
 map<c-l> :close<cr>
 imap<c-l> <Esc>:close<cr>
 func! Run()
-	exec "w"
-	if &filetype == 'cpp'         " 当打开 C++ 对应文件时进行下述操作
-		exec ":silent !del %<.exe"  " （悄悄地）删除之前的可执行文件
-		exec ":!g++ % -o %<"        " 编译运行，“-o” 表示重命名输出文件（可执行文件）为源文件名
-		exec ":ter %<"              " 分割当前窗口打开终端
-	endif
+  exec "w"
+  if &filetype == 'cpp'         " 当打开 C++ 对应文件时进行下述操作
+    exec ":silent !del %<.exe"  " （悄悄地）删除之前的可执行文件
+    exec ":!g++ % -o %<"        " 编译运行，“-o” 表示重命名输出文件（可执行文件）为源文件名
+    exec ":ter %<"              " 分割当前窗口打开终端
+  endif
 endfunc
 ```
 {% endcapture %}
