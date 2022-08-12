@@ -45,7 +45,7 @@ func! Run()
   exec "w"
   if &filetype == 'cpp'         " 当打开 C++ 对应文件时进行下述操作
     exec ":silent !del %<.exe"  " （悄悄地）删除之前的可执行文件
-    exec ":!g++ % -o %<"        " 编译运行，“-o” 表示重命名输出文件（可执行文件）为源文件名
+    exec ":!g++ -Wall % -o %<"  " 编译运行，“-o” 表示重命名输出文件（可执行文件）为源文件名，“-Wall” 表示显示所有警告
     exec ":ter %<"              " 分割当前窗口打开终端
   endif
 endfunc
