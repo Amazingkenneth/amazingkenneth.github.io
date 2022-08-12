@@ -17,7 +17,7 @@ parent: tutorial
 </details>
 
 ---
-
+## 介绍
 [Vim](https://www.vim.org/) 是一款强大的开源文本编辑器，可以来 [此处](https://www.vim.org/download.php#pc) 下载，用熟后可以让你的输入和编辑速度提升许多。
 [这里](https://github.com/vim/vim) 是它在 GitHub 上的仓库，README.md 文件中有它的详细介绍。
 
@@ -25,12 +25,13 @@ parent: tutorial
 
 此外，[CCF](https://www.noi.cn/gynoi/jsgz/2021-07-16/732450.shtml) 对此也提供了支持，意味着可以在考场上使用这份非常不错的编辑器。不过如果想在考场上配出一个接近于本地 Vim 的编辑器，还需花些时间记忆以下配置：
 
+## 配置
 **$VIM/_vimrc [+]**
 {% capture code_fence %}
 ```vim
 set nu                          " 显示行号
-set ts=2                        " 设置 tab 的值为 2 个空格
-set sw=2                        " 按 “>>” 一次右移 2 个字符
+set ts=2                        " 设置 tab 的值为 2 个空格（遵循 Google C++ Style）
+set sw=2                        " 按 “>>” 一次右移 2 个字符（遵循 Google C++ Style）
 set expandtab                   " 改 Tab 为 Space
 set cindent                     " 使用 C/C++ 的缩进
 color morning                   " 主题设置，看个人喜好
@@ -55,8 +56,13 @@ endfunc
 {% include fix_linenos.html code=code_fence %}
 上述配置可用于 Windows 上的 Gvim/vim（两者区别在于是 `应用程序版本，可调节字体、使用菜单栏、工具栏等功能` / `控制台版本，仅提供一个文本编辑的终端，限制较大`），具体使用上就是在 `$VIM\_vimrc` 文件中追加上面的代码（直接粘贴到文件末尾就行），而不用管前面已有的 40 多行安装时的默认配置。
 
+## 注意事项
 此外，要记得先把 g++ 放入系统环境变量，否则无法编译运行 C++ 程序，可参照 [这篇文章](https://amazingkenneth.github.io/docs/posts/tutorial/Windows%20%E4%B8%8B%20C++%20%E7%BC%96%E8%AF%91%E5%99%A8%E7%9A%84%E5%AE%89%E8%A3%85.html#%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6%E4%B8%8B) 进行操作。
 正常的话考试中应该要在 5 分钟内配置好这些东西，尽量避免耽误写题时间。
+
+## 题外话
+建议大家在写代码时保持同一个代码风格，在一定程度上可以让你的代码（对你和其他采用同一个代码规范的人来说）更易读，更清晰。
+此处推荐 [Google Code Style](https://google.github.io/styleguide/)，[这里](https://google.github.io/styleguide/cppguide.html) 是其 C++ 版本，而且会 “随着时间的推移而更新”。
 
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
