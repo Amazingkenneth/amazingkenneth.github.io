@@ -57,7 +57,7 @@ endfunc
 上述配置可用于 Windows 上的 Gvim/vim（两者区别在于是 `应用程序版本，可调节字体、使用菜单栏、工具栏等功能` / `控制台版本，仅提供一个文本编辑的终端，限制较大`），具体使用上就是在 `$VIM\_vimrc` 文件中追加上面的代码（直接粘贴到文件末尾就行），而不用管前面已有的 40 多行安装时的默认配置。
 
 ## 注意事项
-此外，要记得先把 g++ 放入系统环境变量，否则无法编译运行 C++ 程序，可参照 [这篇文章](https://amazingkenneth.github.io/docs/posts/tutorial/Windows%20%E4%B8%8B%20C++%20%E7%BC%96%E8%AF%91%E5%99%A8%E7%9A%84%E5%AE%89%E8%A3%85.html#%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6%E4%B8%8B) 进行操作。
+此外，要记得先把编译器目录（放入系统环境变量，否则无法编译运行 C++ 程序，可参照 [这篇文章](https://amazingkenneth.github.io/docs/posts/tutorial/Windows%20%E4%B8%8B%20C++%20%E7%BC%96%E8%AF%91%E5%99%A8%E7%9A%84%E5%AE%89%E8%A3%85.html#%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6%E4%B8%8B) 进行操作。
 正常的话考试中应该要在 5 分钟内配置好这些东西，尽量避免耽误写题时间。
 
 ## 题外话
