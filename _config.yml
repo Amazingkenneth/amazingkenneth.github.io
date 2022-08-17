@@ -18,7 +18,7 @@ url: "https://amazingkenneth.github.io" # the base hostname & protocol for your 
 # include: ["docs/tests/"]
 
 # Set a path/url to a logo that will be displayed instead of the title
-#logo: "/assets/images/just-the-docs.png"
+logo: "/images/icon.svg"
 
 # Enable or disable the site search
 # Supports true (default) or false
