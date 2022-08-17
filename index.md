@@ -11,5 +11,3 @@ permalink: /
 
 [View it on GitHub](https://github.com/Amazingkenneth/amazingkenneth.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
 ![Hello](https://amazingkenneth.github.io/images/hello.gif)
-
-<script type="text/javascript" src="https://amazingkenneth.github.io/admin/work.js"></script>
