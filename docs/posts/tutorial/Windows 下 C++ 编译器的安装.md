@@ -178,7 +178,5 @@ PS C:\Users\amazi>
 ![SecondPage](https://amazingkenneth.github.io/images/secondpage.png)
 对于更多 `gdb` 这一强大的调试工具的使用，详见 [Documention](https://www.sourceware.org/gdb/documentation/)。
 
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <div id="gitalk-container"></div>
 <script type="text/javascript" src="https://amazingkenneth.github.io/admin/work.js"></script>

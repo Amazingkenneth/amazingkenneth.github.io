@@ -73,7 +73,5 @@ int main() {
 - [printf](https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20printf.jpg)
 - [__builtin_scanf](https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20__builtin_scanf.jpg)
 - [scanf](https://github.com/Amazingkenneth/amazingkenneth.github.io/blob/main/images/time%20scanf.jpg)
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <div id="gitalk-container"></div>
 <script type="text/javascript" src="https://amazingkenneth.github.io/admin/work.js"></script>

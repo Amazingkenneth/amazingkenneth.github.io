@@ -64,7 +64,5 @@ endfunc
 建议大家在写代码时保持同一个代码风格，在一定程度上可以让你的代码（对你和其他采用同一个代码规范的人来说）更易读，更清晰。
 此处推荐 [Google Code Style](https://google.github.io/styleguide/)，[这里](https://google.github.io/styleguide/cppguide.html) 是其 C++ 版本，而且会 “随着时间的推移而更新”。
 
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <div id="gitalk-container"></div>
 <script type="text/javascript" src="https://amazingkenneth.github.io/admin/work.js"></script>
